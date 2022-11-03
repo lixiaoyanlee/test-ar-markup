@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title></title>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+	  <!-- <canvas id="webgl" style="width: 100px;height: 100px;"></canvas> -->
+    <div id="app"><!--app-html--></div>
+	
+	<script>
+		   //通过getElementById()方法获取canvas画布
+		      var canvas = document.getElementById('webgl');
+		      //通过方法getContext()获取WebGL上下文
+		      var gl = canvas.getContext('webgl');
+			  console.log('。。。canvas \(^o^)/~。。。。。。',canvas,gl)
+	</script>
+    <!-- <script type="module" src="/main.js"></script> -->
+  </body>
+</html>
