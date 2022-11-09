@@ -18,7 +18,7 @@
         }
     },
     "compileType": "miniprogram",
-    "libVersion": "2.27.0",
+    "libVersion": "",
     "appid": "wx755f0662b177806f",
     "projectname": "test-ar-markup",
     "condition": {},

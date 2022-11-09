@@ -12,9 +12,9 @@
 /* 10 */,
 /* 11 */,
 /* 12 */
-/*!******************************************************************************************!*\
-  !*** C:/Users/lixiaoyan/Desktop/test-ar-markup/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \******************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** E:/other/diaoyan/ar/test-ar-markup/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29,9 +29,9 @@ wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;createPage(_index.def
 
 /***/ }),
 /* 13 */
-/*!***********************************************************************!*\
-  !*** C:/Users/lixiaoyan/Desktop/test-ar-markup/pages/index/index.vue ***!
-  \***********************************************************************/
+/*!****************************************************************!*\
+  !*** E:/other/diaoyan/ar/test-ar-markup/pages/index/index.vue ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -41,7 +41,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ 16);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var _index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.vue?vue&type=style&index=0&lang=css& */ 21);
-/* harmony import */ var _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 11);
+/* harmony import */ var _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 11);
 
 var renderjs
 
@@ -51,7 +51,7 @@ var renderjs
 
 /* normalize component */
 
-var component = Object(_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = Object(_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["render"],
   _index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -69,30 +69,30 @@ component.options.__file = "pages/index/index.vue"
 
 /***/ }),
 /* 14 */
-/*!******************************************************************************************************!*\
-  !*** C:/Users/lixiaoyan/Desktop/test-ar-markup/pages/index/index.vue?vue&type=template&id=57280228& ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** E:/other/diaoyan/ar/test-ar-markup/pages/index/index.vue?vue&type=template&id=57280228& ***!
+  \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./index.vue?vue&type=template&id=57280228& */ 15);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./index.vue?vue&type=template&id=57280228& */ 15);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["recyclableRender"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["recyclableRender"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "components", function() { return _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["components"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "components", function() { return _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_16_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_uni_app_loader_page_meta_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_template_id_57280228___WEBPACK_IMPORTED_MODULE_0__["components"]; });
 
 
 
 /***/ }),
 /* 15 */
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/lixiaoyan/Desktop/test-ar-markup/pages/index/index.vue?vue&type=template&id=57280228& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/other/diaoyan/ar/test-ar-markup/pages/index/index.vue?vue&type=template&id=57280228& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -116,24 +116,24 @@ render._withStripped = true
 
 /***/ }),
 /* 16 */
-/*!************************************************************************************************!*\
-  !*** C:/Users/lixiaoyan/Desktop/test-ar-markup/pages/index/index.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** E:/other/diaoyan/ar/test-ar-markup/pages/index/index.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./index.vue?vue&type=script&lang=js& */ 17);
-/* harmony import */ var _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./index.vue?vue&type=script&lang=js& */ 17);
+/* harmony import */ var _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 /* 17 */
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/lixiaoyan/Desktop/test-ar-markup/pages/index/index.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/other/diaoyan/ar/test-ar-markup/pages/index/index.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -158,27 +158,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
+var VSHADER_SOURCE = "" +
+"attribute vec4 a_position;" + //
+"attribute vec2 a_texCoord;" + //
+"varying vec2 v_texCoord;" + //
+"void main(){\n" +
+"   gl_Position = a_position;" +
+"   v_texCoord = a_texCoord;" + //
+"}";
+
+var FSHADER_SOURCE = "" +
+"precision mediump float;" + //
+"uniform sampler2D u_image;" + //
+"varying vec2 v_texCoord;" + //
+"void main(){" +
+"   gl_FragColor = texture2D(u_image,v_texCoord);" + //
+"}";
 var canvas;
 var gl;
 
-var test;
-
 var w = 0;
 var h = 0;
+
+//唇彩特效透明度
+var translucent;
+var translucentBase = 1;
 
 //唇彩图片
 var img;
 //唇彩图片路径
 var imgPath;
-//唇彩特效透明度
-var translucent;
-var translucentBase = 1;
-//嘴唇面片缩放系数
-var lipScale;
 
-//阿里ar sdk嘴唇关键点起始索引
-var lipMarkBeginIndex;
 //德劳内三角化退化成查找表
 var lipIndex = new Int32Array([
 84, 85, 96,
@@ -227,6 +243,7 @@ var lipScaleIndex = new Int32Array([
 95, 103]);
 
 
+//纹理坐标
 var lipTexCoordnate = new Float32Array([
 0, 0.5,
 0.153, 0.686,
@@ -251,6 +268,8 @@ var lipTexCoordnate = new Float32Array([
 
 
 var quadVertex = new Float32Array([
+//顶点坐标   纹理坐标
+//------\\ //----\\
 -1.0, 1.0, 0.0, 0.0,
 -1.0, -1.0, 0.0, 1.0,
 1.0, -1.0, 1.0, 1.0,
@@ -265,7 +284,6 @@ var lipVertex = new Float32Array([
 1.0, -1.0, 1.0, 1.0, 1.0,
 1.0, 1.0, 1.0, 0.0, 1.0,
 -1.0, 1.0, 0.0, 0.0, 1.0]);
-
 //render resource
 var vertShader;
 var fragShader;
@@ -280,10 +298,13 @@ var lipPointsIndex;
 var lipPointsScale;
 var lipPointsUnScale;
 var lipTexture;
-var cameraTexture;var _default =
-
-
-{
+var cameraTexture;
+var lipMarkBeginIndex = 84;
+var dataFrame;
+//嘴唇面片缩放系数
+var lipScale;
+// var points = []
+var _default = {
   name: 'ar-camera-com',
   data: function data() {
     return {
@@ -343,8 +364,10 @@ var cameraTexture;var _default =
       2021.00354189],
 
       translucent: 0.5,
-      imgLipstick: 'https://cdn-mdj.oss-cn-beijing.aliyuncs.com/common/test-ar-makeup/lipColor1.png',
-      imgModel: 'https://cdn-mdj.oss-cn-beijing.aliyuncs.com/common/test-ar-makeup/model.jpg',
+      imgLipstick: '/static/images/ar-makup/lipColor1.png',
+      imgModel: '/static/images/ar-makup/model1.jpg',
+      // imgLipstick: 'https://cdn-mdj.oss-cn-beijing.aliyuncs.com/common/test-ar-makeup/lipColor1.png',
+      // imgModel: 'https://cdn-mdj.oss-cn-beijing.aliyuncs.com/common/test-ar-makeup/model.jpg',
       isFaceBeauty: true,
       isShowFacePoints: false,
       vertexs: new Float32Array([
@@ -359,27 +382,35 @@ var cameraTexture;var _default =
   computed: {},
   created: function created() {
     // this.setCanvasWh();
-    // this.handleARFrame1();
+    this.imgLoad();
   },
-  onReady: function onReady() {
-    console.log('。。。。。。。onReady。。。');
-  },
+
+  onReady: function onReady() {},
   methods: {
-    imgLoad: function imgLoad(e) {
-      console.log(e, 'width', e.detail.width);
-      console.log('height：', e.detail.height);
+    imgLoad: function imgLoad(e) {var _this = this;
+      // console.log(e, 'width', e.detail.width);
+      // console.log('height：', e.detail.height);
+      this.handleARFrame1();
+      var self = this;
+      translucent = 0.5;
+      lipMarkBeginIndex = this.lipMarkBeginIndex = 84;
+      lipScale = this.lipScale = 0.01;
+
       var systemInfo = uni.getSystemInfoSync();
-      this.imgWidth = e.detail.width;
-      this.imgHeight = e.detail.height;
+      var wImg = 1389,hImg = 1852;
+      // this.imgWidth = e.detail.width
+      // this.imgHeight = e.detail.height
+      this.imgWidth = wImg;
+      this.imgHeight = hImg;
       var w = systemInfo.windowWidth;
       var h = systemInfo.windowHeight;
-      var r = e.detail.width / e.detail.height;
+      var r = wImg / hImg;
       console.log(systemInfo, 'getImageInfo', this.canvasObj, w, h, r);
       if (w / h < r) {
         // 表示高是短边,现在宽剧中
         this.canvasObj.height = h;
         this.canvasObj.width = r * h;
-        this.canvasObj.top = 0 + 'px';
+        this.canvasObj.top = 0;
         this.canvasObj.left = (w - this.canvasObj.width) / 2;
       } else {
         this.canvasObj.width = w;
@@ -389,10 +420,136 @@ var cameraTexture;var _default =
       }
       this.canvasObj.pixelRatio = systemInfo.pixelRatio;
       console.log(w / h < r, '。。。。。。。this.canvasObj。。。', this.canvasObj);
-      this.canvasWxFn();
+
+      setTimeout(function () {
+        _this.canvasWxFn();
+      }, 1000);
+
+    },
+    canvasWxFn: function canvasWxFn() {var _this2 = this;
+
+
+
+      try {
+        wx.createSelectorQuery().
+        select('#arcanvas').
+        node().
+        exec(function (res) {
+          console.log('drawAiwendy', res);
+          var c = res[0].node;
+          // if(!c){
+
+          // }
+          var systemInfo = uni.getSystemInfoSync();
+          console.log('。。。systemInfo。。', _this2.canvasObj, _this2.canvasObj);
+          c.height = _this2.canvasObj.height;
+          c.width = _this2.canvasObj.width;
+          console.log(c.width, '。。。。。。。uni.createCanvas。。success。', c);
+          _this2.gl = c.getContext('webgl');
+          gl = _this2.gl;
+          if (!gl) {
+            console.log('webgl未受支持');
+            return;
+          }
+          _this2.canvas = c;
+          canvas = c;
+          console.log(_this2.points, '。。。。。。。uni.createCanvas。。success。', gl);
+          // this.renderImg()
+
+          Promise.all([_this2.changeLipStyle(_this2.imgLipstick),
+          // this.updateFaceData1()
+          _this2.changeLipStyle(_this2.imgModel)]).
+          then(function (res) {
+            console.log('zhixingwanbi 哈哈哈', res);
+
+            _this2.lipRenderPipeline();
+            _this2.quadRenderPipeline();
+            _this2.drawQuan(res[1]);
+
+            _this2.drawLip(res[0]);
+            // this.drawFacePoints(this.points);
+          }).catch(function (err) {
+            console.log('失败 哈哈哈', err);
+          });
+
+        });
+      } catch (e) {
+        //TODO handle the exception
+        console.log('....', e);
+      }
+
+
+      // this.onCanvasReady('arcanvas')
+    },
+    onCanvasReady: function onCanvasReady(id) {
+      console.log('onCanvasReady kaishi 哈哈哈');
+      // this.imgLoad();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     },
     handleARFrame1: function handleARFrame1() {
-      var rawPoints = this.points84By63;
+      var rawPoints = this.points84By63.map(function (item) {return item * 0.6;});
       var len = 106;
       for (var i = 0; i < 84; i++) {
         rawPoints.unshift(0.1, 0.1);
@@ -408,89 +565,107 @@ var cameraTexture;var _default =
       for (var i = 0; i < 106; i++) {
         points.push(transformPoint([rawPoints[i * 2], rawPoints[i * 2 + 1]], this.imgWidth, this.imgHeight));
       }
-
-      console.log(points, '...gl 出来了么....', this.imgWidth, this.imgHeight);
+      console.log(points, '...gl 出来了么....');
       this.points = points;
     },
-    canvasWxFn: function canvasWxFn() {var _this = this;
-      this.handleARFrame1();
-
-      var self = this;
-      translucent = 0.7;
-      lipMarkBeginIndex = this.lipMarkBeginIndex = 84;
-      // this.lipScale = 0.01;
-
-      try {
-        uni.createSelectorQuery().
-        select('#arcanvas').
-        fields({ node: true, size: true }).
-        exec(function (res) {
-          console.log('drawAiwendy', res);
-          var c = res[0].node;
-          var systemInfo = uni.getSystemInfoSync();
-          console.log('。。。systemInfo。。', _this.canvasObj, _this.canvasObj);
-          c.height = _this.canvasObj.height;
-          c.width = _this.canvasObj.width;
-          console.log(c.width, '。。。。。。。uni.createCanvas。。success。', c);
-          _this.gl = c.getContext('webgl');
-          gl = _this.gl;
-          _this.canvas = c;
-          canvas = c;
-          console.log(_this.points, '。。。。。。。uni.createCanvas。。success。', gl);
-          // this.renderImg()
-
-          Promise.all([_this.changeLipStyle(_this.imgLipstick),
-          _this.changeLipStyle(_this.imgModel)]).
-          then(function (res) {
-            console.log('zhixingwanbi 哈哈哈', res);
-            _this.initRenderPipeline();
-            gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
-            gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res[1]);
+    quadRenderPipeline: function quadRenderPipeline() {
+      /*=========================Shaders========================*/
+      var FSIZE = 4;
+      var quadVertCode = "#version 300 es\n\t\t\t      layout(location = 0) in vec2 a_position;\n\t\t\t      layout(location = 1) in vec2 a_uv;\n\t\t\t      out vec2 uv_out;\n\t\t\t      void main() {\n\t\t\t        gl_Position = vec4(a_position, 1.0, 1.0);\n\t\t\t        uv_out = a_uv;\n\t\t\t      }\n\t\t\t      ";
 
 
-            gl.bindTexture(gl.TEXTURE_2D, lipTexture);
-            gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res[0]);
 
-            // var dataFrame = new Uint8Array(res1.data);
 
-            _this.drawFaceLip(_this.points);
 
-            // this.drawFacePoints(this.points);
-          }).catch(function (err) {
-            console.log('失败 哈哈哈', err);
-          });
 
-        });
-      } catch (e) {
-        //TODO handle the exception
-        console.log('....', e);
+
+
+
+      var quadFragCode = "#version 300 es\n\t\t\t      precision mediump float;\n\t\t\t      in vec2 uv_out;\n\t\t\t      uniform sampler2D u_texture;\n\t\t\t      layout(location = 0) out vec4 outColor;\n\t\t\t      void main() {\n\t\t\t        vec2 uv = vec2(uv_out.x, uv_out.y);\n\t\t\t        outColor = vec4(texture(u_texture, uv).xyz, 1.0);\n\t\t\t      }\n\t\t\t      ";
+
+
+
+
+
+
+
+
+
+
+      console.log("quadVertShader的值", quadVertShader);
+      quadVertShader = gl.createShader(gl.VERTEX_SHADER); // 创建顶点着色器
+      gl.shaderSource(quadVertShader, quadVertCode); // 绑定顶点着色器源码
+      gl.compileShader(quadVertShader); // 编译定点着色器
+
+      console.log("quadVertShader的值1", quadVertShader);
+
+      quadFragShader = gl.createShader(gl.FRAGMENT_SHADER); // 创建片元着色器
+      gl.shaderSource(quadFragShader, quadFragCode); // 绑定片元着色器源码
+      gl.compileShader(quadFragShader); // 编译片元着色器
+      console.log("quadFragShader的值", quadFragShader);
+
+      quadShaderProgram = gl.createProgram(); // 创建着色器程序
+      gl.attachShader(quadShaderProgram, quadVertShader); // 指定顶点着色器
+      gl.attachShader(quadShaderProgram, quadFragShader); // 指定片元着色色器
+      gl.linkProgram(quadShaderProgram); // 链接程序
+      gl.useProgram(quadShaderProgram); //使用着色器
+      console.log("quadShaderProgram 渲染成功否");
+
+
+    },
+    drawQuan: function drawQuan(res) {
+      // gl.useProgram(0);
+      gl.clearColor(0.0, 0.0, 0.0, 0.0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+
+      var FSIZE = 4;
+      quadVertexbuffer = gl.createBuffer(); //  创建缓冲区对象(gl.createBuffer())
+      if (quadVertexbuffer === null) {
+        console.log("quadVertexbuffer is null");
       }
+      console.log("quadVertexbuffer", quadVertexbuffer);
+      // 绑定缓冲区对象(gl.bindBuffer(target, buffer))
+      gl.disable(gl.BLEND);
+      gl.bindBuffer(gl.ARRAY_BUFFER, quadVertexbuffer);
+      // 将数据写入缓冲区对象(gl.bufferData()) WebGL 不支持直接使用 JavaScript 原始数组类型，需要转换
+      gl.bufferData(gl.ARRAY_BUFFER, quadVertex, gl.STATIC_DRAW);
 
+      var qposlocation = gl.getAttribLocation(quadShaderProgram, 'a_position');
+      gl.vertexAttribPointer(qposlocation, 2, gl.FLOAT, false, FSIZE * 4, 0); //将顶点坐标的位置赋值
+      gl.enableVertexAttribArray(qposlocation); // 赋能-批处理
+      console.log("qposlocation", qposlocation);
 
-      // this.onCanvasReady('arcanvas')
-    },
+      var quv = gl.getAttribLocation(quadShaderProgram, 'a_uv');
+      gl.vertexAttribPointer(quv, 2, gl.FLOAT, false, FSIZE * 4, FSIZE * 2);
+      gl.enableVertexAttribArray(quv);
+      console.log("quv 222", quv);
 
-    setCanvasWh: function setCanvasWh() {
-      var systemInfo = my.getSystemInfoSync();
-      var w = systemInfo.windowWidth;
-      var h = systemInfo.windowHeight;
-      var r = 720 / 1280;
-      if (w / h < r) {
-        // 表示高是短边,现在宽剧中
-        this.canvasObj.height = h;
-        this.canvasObj.width = r * h;
-        this.canvasObj.top = 0 + 'px';
-        this.canvasObj.left = (w - this.canvasObj.width) / 2;
-      } else {
-        this.canvasObj.width = w;
-        this.canvasObj.height = w / r;
-        this.canvasObj.top = (h - this.canvasObj.height) / 2;
-        this.canvasObj.left = 0;
+      cameraTexture = gl.createTexture(); //创建纹理对象
+      console.log("cameraTexture gl.createTexture", cameraTexture);
+      if (cameraTexture === null) {
+        console.log("cameraTexture is null");
+        // return false;
       }
-      this.canvasObj.pixelRatio = systemInfo.pixelRatio;
-      console.log(w / h < r, '。。。。。。。this.canvasObj。。。', this.canvasObj);
+      gl.activeTexture(gl.TEXTURE0); // 开启0号纹理单元
+      gl.bindTexture(gl.TEXTURE_2D, cameraTexture); // 向target绑定纹理对象
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      console.log("cameraTexture ", cameraTexture);
+
+
+      // gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res);
+
+      // gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
+
+      gl.useProgram(quadShaderProgram);
+      gl.drawArrays(gl.TRIANGLES, 0, 6);
     },
-    onCanvasReady: function onCanvasReady(id) {
+    lipRenderPipeline: function lipRenderPipeline() {
+      var FSIZE = 4;
+      var vertCode = "#version 300 es\n\t\t\t      layout(location = 0) in vec2 a_position;\n\t\t\t      layout(location = 1) in vec3 a_uv;\n\t\t\t      out vec3 uv_out;\n\t\t\t      void main() {\n\t\t\t        gl_Position = vec4(a_position, 1.0, 1.0);\n\t\t\t        uv_out = a_uv;\n\t\t\t        //uv_out = vec2(1.0, 0.0);\n\t\t\t      }\n\t\t\t      ";
 
 
 
@@ -501,44 +676,8 @@ var cameraTexture;var _default =
 
 
 
+      var fragCode = "#version 300 es\n\t\t\t      precision mediump float;\n\t\t\t      in vec3 uv_out;\n\t\t\t      uniform sampler2D u_texture;\n\t\t\t      uniform sampler2D u_texture2;\n\t\t\t      layout(location = 0) out vec4 outColor;\n\t\t\t      void main() {\n\t\t\t\n\t\t\t        vec2 uv = vec2(uv_out.x, 1.0 - uv_out.y);\n\t\t\t        vec3 lipColor = texture(u_texture, uv).xyz;\n\t\t\t        vec3 c = lipColor;\n\t\t\t        vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\n\t\t\t        vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\n\t\t\t        vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\n\t\t\t\n\t\t\t        float d = q.x - min(q.w, q.y);\n\t\t\t        float e = 1.0e-10;\n\t\t\t        vec3 hc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\t\t\t\n\t\t\t        hc.y *= 1.2;\n\t\t\t\n\t\t\t        vec4 L = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\n\t\t\t        vec3 M = abs(fract(hc.xxx + L.xyz) * 6.0 - L.www);\n\t\t\t        vec3 color = hc.z * mix(L.xxx, clamp(M - L.xxx, 0.0, 1.0), hc.y);\n\t\t\t\n\t\t\t        //outColor = vec4(color, 1.0);\n\t\t\t        \n\t\t\t        \n\t\t\t        //vec4 lipColor = texture(u_texture, uv);\n\t\t\t        vec4 frameColor = texture(u_texture2, uv_out.xy);\n\t\t\t        //vec3 finalColor = lipColor.xyz * lipColor.w + frameColor.xyz * (1.0 - lipColor.w);\n\t\t\t        float alpha = texture(u_texture, uv).w;\n\t\t\t        outColor = vec4(color.xyz, alpha * uv_out.z);\n\t\t\t      }\n\t\t\t      ";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    },
-
-
-    initRenderPipeline: function initRenderPipeline() {
-      var vertCode = "#version 300 es\n\t\t\t\t\t  layout(location = 0) in vec2 a_position;\n\t\t\t\t\t  layout(location = 1) in vec3 a_uv;\n\t\t\t\t\t  out vec3 uv_out;\n\t\t\t\t\t  void main() {\n\t\t\t\t\t\tgl_Position = vec4(a_position, 1.0, 1.0);\n\t\t\t\t\t\tuv_out = a_uv;\n\t\t\t\t\t\t//uv_out = vec2(1.0, 0.0);\n\t\t\t\t\t  }\n\t\t\t\t\t  ";
-
-
-
-
-
-
-
-
-
-
-
-      var fragCode = "#version 300 es\n\t\t\t\t\t  precision mediump float;\n\t\t\t\t\t  in vec3 uv_out;\n\t\t\t\t\t  uniform sampler2D u_texture;\n\t\t\t\t\t  uniform sampler2D u_texture2;\n\t\t\t\t\t  layout(location = 0) out vec4 outColor;\n\t\t\t\t\t  void main() {\n\n\t\t\t\t\t\tvec2 uv = vec2(uv_out.x, 1.0 - uv_out.y);\n\t\t\t\t\t\tvec3 lipColor = texture(u_texture, uv).xyz;\n\t\t\t\t\t\tvec3 c = lipColor;\n\t\t\t\t\t\tvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\n\t\t\t\t\t\tvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\n\t\t\t\t\t\tvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\n\n\t\t\t\t\t\tfloat d = q.x - min(q.w, q.y);\n\t\t\t\t\t\tfloat e = 1.0e-10;\n\t\t\t\t\t\tvec3 hc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\n\t\t\t\t\t\thc.y *= 1.2;\n\n\t\t\t\t\t\tvec4 L = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\n\t\t\t\t\t\tvec3 M = abs(fract(hc.xxx + L.xyz) * 6.0 - L.www);\n\t\t\t\t\t\tvec3 color = hc.z * mix(L.xxx, clamp(M - L.xxx, 0.0, 1.0), hc.y);\n\n\t\t\t\t\t\t//outColor = vec4(color, 1.0);\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t//vec4 lipColor = texture(u_texture, uv);\n\t\t\t\t\t\tvec4 frameColor = texture(u_texture2, uv_out.xy);\n\t\t\t\t\t\t//vec3 finalColor = lipColor.xyz * lipColor.w + frameColor.xyz * (1.0 - lipColor.w);\n\t\t\t\t\t\tfloat alpha = texture(u_texture, uv).w;\n\t\t\t\t\t\t//outColor = vec4(color.xyz, alpha);\n\t\t\t\t\t\toutColor = vec4(color.xyz, alpha * uv_out.z);\n\t\t\t\t\t  }\n\t\t\t\t\t  ";
 
 
 
@@ -577,37 +716,193 @@ var cameraTexture;var _default =
 
 
       vertShader = gl.createShader(gl.VERTEX_SHADER);
+
+      if (vertShader === null) {
+        console.log("vertShader is null");
+      }
       gl.shaderSource(vertShader, vertCode);
       gl.compileShader(vertShader);
+
       console.log("vertShader is compileShader ");
 
       fragShader = gl.createShader(gl.FRAGMENT_SHADER);
       gl.shaderSource(fragShader, fragCode);
       gl.compileShader(fragShader);
-      console.log("fragShader is compileShader ");
 
+
+      console.log("fragShader is compileShader ");
       shaderProgram = gl.createProgram();
       gl.attachShader(shaderProgram, vertShader);
       gl.attachShader(shaderProgram, fragShader);
       gl.linkProgram(shaderProgram);
       gl.useProgram(shaderProgram);
-      console.log("shaderProgram ");
+      console.log('。。。。初始化着色器是否成功。。。。');
+    },
+    drawLip: function drawLip(res) {
+      lipPoints = [];
+      var lipPointCount = 106 * 2;
+      for (var i = 0; i < lipPointCount; i++) {
+        lipPoints.push(0.0);
+        lipPoints.push(0.0);
+        lipPoints.push(0.0);
+        lipPoints.push(0.0);
+        lipPoints.push(0.0);
+      }
+      console.log("lipPoints的值计算开始 ");
+
+      lipPointCount = lipIndex.length;
+      for (var i = 0; i < lipPointCount; i++) {
+        var index = lipIndex[i];
+        lipPoints[i * 5] = this.points[index][0];
+        lipPoints[i * 5 + 1] = this.points[index][1];
+        lipPoints[i * 5 + 2] = lipTexCoordnate[2 * (index - lipMarkBeginIndex)];
+        lipPoints[i * 5 + 3] = lipTexCoordnate[2 * (index - lipMarkBeginIndex) + 1];
+        lipPoints[i * 5 + 4] = translucent;
+      }
+
+      console.log(lipMarkBeginIndex, "lipPoints的值 hah", lipPoints, lipTexCoordnate);
+      vertexbuffer = gl.createBuffer();
+      if (vertexbuffer === null) {
+        console.log("vertexbuffer is null");
+      }
+      console.log('drawFaceLipdrawFaceLip开始gl.ARRAY_BUFFER', vertexbuffer);
+
+
+      var FSIZE = 4;
+      gl.enable(gl.BLEND);
+      gl.blendFuncSeparate(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA, gl.NONE, gl.ONE);
+      gl.blendEquationSeparate(gl.FUNC_ADD, gl.FUNC_ADD);
+      gl.bindBuffer(gl.ARRAY_BUFFER, vertexbuffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(lipPoints), gl.STREAM_DRAW);
+
+      var aposlocation = gl.getAttribLocation(shaderProgram, 'a_position');
+      gl.enableVertexAttribArray(aposlocation);
+      gl.vertexAttribPointer(aposlocation, 2, gl.FLOAT, false, FSIZE * 5, 0);
+      console.log("aposlocation的值 ", aposlocation);
+
+      var auv = gl.getAttribLocation(shaderProgram, 'a_uv');
+      gl.enableVertexAttribArray(auv);
+      gl.vertexAttribPointer(auv, 3, gl.FLOAT, false, FSIZE * 5, FSIZE * 2);
+      console.log("auv的值 ", auv);
+
+      // gl.useProgram(0);
+      // gl.bindTexture(0);
+      lipTexture = gl.createTexture();
+      console.log("lipTexture gl.createTexture", lipTexture);
+      if (lipTexture === null) {
+        console.log("lipTexture is null");
+        // return false;
+      }
+      gl.bindTexture(gl.TEXTURE_2D, lipTexture);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res); // 配置纹理图像
+      console.log("createTexturecreateTexture ", lipTexture);
+
+
+      gl.activeTexture(gl.TEXTURE0);
+      gl.bindTexture(gl.TEXTURE_2D, lipTexture);
+
+
+      gl.activeTexture(gl.TEXTURE1);
+      gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
+      gl.useProgram(shaderProgram);
+
+      gl.drawArrays(gl.TRIANGLES, 0, 60);
+    },
+    initRenderPipeline: function initRenderPipeline() {
+      var vertCode = "#version 300 es\n\t\t\t      layout(location = 0) in vec2 a_position;\n\t\t\t      layout(location = 1) in vec3 a_uv;\n\t\t\t      out vec3 uv_out;\n\t\t\t      void main() {\n\t\t\t        gl_Position = vec4(a_position, 1.0, 1.0);\n\t\t\t        uv_out = a_uv;\n\t\t\t        //uv_out = vec2(1.0, 0.0);\n\t\t\t      }\n\t\t\t      ";
+
+
+
+
+
+
+
+
+
+
+
+      var fragCode = "#version 300 es\n\t\t\t      precision mediump float;\n\t\t\t      in vec3 uv_out;\n\t\t\t      uniform sampler2D u_texture;\n\t\t\t      uniform sampler2D u_texture2;\n\t\t\t      layout(location = 0) out vec4 outColor;\n\t\t\t      void main() {\n\t\t\t\n\t\t\t        vec2 uv = vec2(uv_out.x, 1.0 - uv_out.y);\n\t\t\t        vec3 lipColor = texture(u_texture, uv).xyz;\n\t\t\t        vec3 c = lipColor;\n\t\t\t        vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\n\t\t\t        vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\n\t\t\t        vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\n\t\t\t\n\t\t\t        float d = q.x - min(q.w, q.y);\n\t\t\t        float e = 1.0e-10;\n\t\t\t        vec3 hc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\t\t\t\n\t\t\t        hc.y *= 1.2;\n\t\t\t\n\t\t\t        vec4 L = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\n\t\t\t        vec3 M = abs(fract(hc.xxx + L.xyz) * 6.0 - L.www);\n\t\t\t        vec3 color = hc.z * mix(L.xxx, clamp(M - L.xxx, 0.0, 1.0), hc.y);\n\t\t\t\n\t\t\t        //outColor = vec4(color, 1.0);\n\t\t\t        \n\t\t\t        \n\t\t\t        //vec4 lipColor = texture(u_texture, uv);\n\t\t\t        vec4 frameColor = texture(u_texture2, uv_out.xy);\n\t\t\t        //vec3 finalColor = lipColor.xyz * lipColor.w + frameColor.xyz * (1.0 - lipColor.w);\n\t\t\t        float alpha = texture(u_texture, uv).w;\n\t\t\t        outColor = vec4(color.xyz, alpha * uv_out.z);\n\t\t\t      }\n\t\t\t      ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      vertShader = gl.createShader(gl.VERTEX_SHADER);
+      if (vertShader === null) {
+        console.log("vertShader is null");
+      }
+      gl.shaderSource(vertShader, vertCode);
+      gl.compileShader(vertShader);
+
+      console.log("vertShader is compileShader ");
+
+      fragShader = gl.createShader(gl.FRAGMENT_SHADER);
+      gl.shaderSource(fragShader, fragCode);
+      gl.compileShader(fragShader);
+
+      console.log("fragShader is compileShader ");
+      shaderProgram = gl.createProgram();
+      gl.attachShader(shaderProgram, vertShader);
+      gl.attachShader(shaderProgram, fragShader);
+      gl.linkProgram(shaderProgram);
+      gl.useProgram(shaderProgram);
+
+
+      console.log('。。。。初始化着色器是否成功。。。。');
 
       var FSIZE = 4;
 
       vertexbuffer = gl.createBuffer();
+      if (vertexbuffer === null) {
+        console.log("vertexbuffer is null");
+      }
+
       var aposlocation = gl.getAttribLocation(shaderProgram, 'a_position');
+      console.log("a_position的值", aposlocation);
+      gl.vertexAttribPointer(aposlocation, 2, gl.FLOAT, false, FSIZE * 5, 0);
       gl.enableVertexAttribArray(aposlocation);
-      gl.vertexAttribPointer(aposlocation, 3, gl.FLOAT, false, FSIZE * 6, 0);
-      console.log("aposlocation： ", aposlocation);
 
       var auv = gl.getAttribLocation(shaderProgram, 'a_uv');
+      console.log("auv的值", auv);
+      gl.vertexAttribPointer(auv, 3, gl.FLOAT, false, FSIZE * 5, FSIZE * 2);
       gl.enableVertexAttribArray(auv);
-      gl.vertexAttribPointer(auv, 3, gl.FLOAT, false, FSIZE * 6, FSIZE * 3);
-      console.log("auv： ", auv);
 
-
-      var quadVertCode = "#version 300 es\n\t\t\t\t  layout(location = 0) in vec2 a_position;\n\t\t\t\t  layout(location = 1) in vec2 a_uv;\n\t\t\t\t  out vec2 uv_out;\n\t\t\t\t  void main() {\n\t\t\t\t\tgl_Position = vec4(a_position, 1.0, 1.0);\n\t\t\t\t\tuv_out = a_uv;\n\t\t\t\t  }\n\t\t\t\t  ";
+      var quadVertCode = "#version 300 es\n\t\t\t      layout(location = 0) in vec2 a_position;\n\t\t\t      layout(location = 1) in vec2 a_uv;\n\t\t\t      out vec2 uv_out;\n\t\t\t      void main() {\n\t\t\t        gl_Position = vec4(a_position, 1.0, 1.0);\n\t\t\t        uv_out = a_uv;\n\t\t\t      }\n\t\t\t      ";
 
 
 
@@ -618,7 +913,7 @@ var cameraTexture;var _default =
 
 
 
-      var quadFragCode = "#version 300 es\n\t\t\t\t  precision mediump float;\n\t\t\t\t  in vec2 uv_out;\n\t\t\t\t  uniform sampler2D u_texture;\n\t\t\t\t  layout(location = 0) out vec4 outColor;\n\t\t\t\t  void main() {\n\t\t\t\t\tvec2 uv = vec2(uv_out.x, uv_out.y);\n\t\t\t\t\toutColor = vec4(texture(u_texture, uv).xyz, 1.0);\n\t\t\t\t  }\n\t\t\t\t  ";
+      var quadFragCode = "#version 300 es\n\t\t\t      precision mediump float;\n\t\t\t      in vec2 uv_out;\n\t\t\t      uniform sampler2D u_texture;\n\t\t\t      layout(location = 0) out vec4 outColor;\n\t\t\t      void main() {\n\t\t\t        vec2 uv = vec2(uv_out.x, uv_out.y);\n\t\t\t        outColor = vec4(texture(u_texture, uv).xyz, 1.0);\n\t\t\t      }\n\t\t\t      ";
 
 
 
@@ -633,31 +928,36 @@ var cameraTexture;var _default =
       quadVertShader = gl.createShader(gl.VERTEX_SHADER);
       gl.shaderSource(quadVertShader, quadVertCode);
       gl.compileShader(quadVertShader);
+      console.log("quadVertShader的值", quadVertShader);
+
 
       quadFragShader = gl.createShader(gl.FRAGMENT_SHADER);
       gl.shaderSource(quadFragShader, quadFragCode);
       gl.compileShader(quadFragShader);
+      console.log("quadFragShader的值", quadFragShader);
 
       quadShaderProgram = gl.createProgram();
       gl.attachShader(quadShaderProgram, quadVertShader);
       gl.attachShader(quadShaderProgram, quadFragShader);
       gl.linkProgram(quadShaderProgram);
       gl.useProgram(quadShaderProgram);
+      console.log("quadShaderProgram 渲染成功否");
 
 
       quadVertexbuffer = gl.createBuffer();
+      console.log("quadVertexbuffer", quadVertexbuffer);
       gl.bindBuffer(gl.ARRAY_BUFFER, quadVertexbuffer);
       gl.bufferData(gl.ARRAY_BUFFER, quadVertex, gl.STATIC_DRAW);
 
       var qposlocation = gl.getAttribLocation(quadShaderProgram, 'a_position');
       gl.enableVertexAttribArray(qposlocation);
       gl.vertexAttribPointer(qposlocation, 2, gl.FLOAT, false, FSIZE * 4, 0);
-      console.log("qposlocation： ", qposlocation);
+      console.log("qposlocation", qposlocation);
 
       var quv = gl.getAttribLocation(quadShaderProgram, 'a_uv');
       gl.enableVertexAttribArray(quv);
       gl.vertexAttribPointer(quv, 2, gl.FLOAT, false, FSIZE * 4, FSIZE * 2);
-      console.log("quv： ", quv);
+      console.log("quv 222", quv);
 
       gl.useProgram(0);
 
@@ -667,7 +967,7 @@ var cameraTexture;var _default =
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
-
+      console.log("createTexturecreateTexture ", lipTexture);
 
       cameraTexture = gl.createTexture();
       gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
@@ -675,12 +975,11 @@ var cameraTexture;var _default =
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      console.log("cameraTexture ", cameraTexture);
 
       gl.bindTexture(0);
 
       lipPoints = [];
-      lipPointsScale = [];
-      lipPointsUnScale = [];
       var lipPointCount = 106 * 2;
       for (var i = 0; i < lipPointCount; i++) {
         lipPoints.push(0.0);
@@ -689,13 +988,20 @@ var cameraTexture;var _default =
         lipPoints.push(0.0);
         lipPoints.push(0.0);
       }
+      console.log("lipPoints的值 ", lipPoints);
 
 
+      lipPointsIndex = [];
+      var lipPointsIndexCount = lipIndex.length;
+      for (var i = 0; i < lipPointsIndexCount; i++) {
+        lipPointsIndex.push(i);
+      }
+      console.log("lipPointsIndex的值 ", lipPointsIndex);
     },
     releaseRenderFacePoints: function releaseRenderFacePoints() {
-      gl.deleteShader(this.facePoints.vertShader);
-      gl.deleteShader(this.facePoints.fragShader);
-      gl.deleteProgram(this.facePoints.shaderProgram);
+      // gl.deleteShader(this.facePoints.vertShader);
+      // gl.deleteShader(this.facePoints.fragShader);
+      // gl.deleteProgram(this.facePoints.shaderProgram);
     },
     releaseRenderResource: function releaseRenderResource() {
       gl.deleteShader(vertShader);
@@ -709,7 +1015,9 @@ var cameraTexture;var _default =
       gl.deleteTexture(cameraTexture);
       this.releaseRenderFacePoints();
     },
+
     drawFaceLip: function drawFaceLip(points) {
+      console.log(translucent, 'drawFaceLipdrawFaceLip开始', points);
       var lipPointCount = lipIndex.length;
       for (var i = 0; i < lipPointCount; i++) {
         var index = lipIndex[i];
@@ -720,90 +1028,66 @@ var cameraTexture;var _default =
         lipPoints[i * 5 + 4] = translucent;
       }
 
-
-
+      console.log('drawFaceLipdrawFaceLip开始gl.ARRAY_BUFFER', vertexbuffer);
       gl.bindBuffer(gl.ARRAY_BUFFER, vertexbuffer);
+      console.log('drawFaceLipdrawFaceLip lipPoints', points);
       gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(lipPoints), gl.STREAM_DRAW);
 
+
       gl.clearColor(0.0, 0.0, 0.0, 0.0);
-      // gl.clearDepth(1.0);
       gl.clear(gl.COLOR_BUFFER_BIT);
-      gl.disable(gl.DEPTH_TEST);
+      // gl.disable(gl.DEPTH_TEST);
 
 
-
+      // gl.disable(gl.DEPTH_WRITE);
+      // gl.enable(gl.GL_CULL_FACE);
+      // gl.frontFace(gl.CW);
+      console.log('drawFaceLipdrawFaceLip gl.frontFace');
       var FSIZE = 4;
 
       //Pass one
-      gl.disable(gl.BLEND);
+      // gl.disable(gl.BLEND);
       gl.bindBuffer(gl.ARRAY_BUFFER, quadVertexbuffer);
-      console.log('draw quadVertexbuffer:', quadVertexbuffer);
 
       var qposlocation = gl.getAttribLocation(quadShaderProgram, 'a_position');
+
       gl.vertexAttribPointer(qposlocation, 2, gl.FLOAT, false, FSIZE * 4, 0);
       gl.enableVertexAttribArray(qposlocation);
-      console.log('draw qposlocation:', qposlocation);
-
 
       var quv = gl.getAttribLocation(quadShaderProgram, 'a_uv');
+
       gl.vertexAttribPointer(quv, 2, gl.FLOAT, false, FSIZE * 4, FSIZE * 2);
       gl.enableVertexAttribArray(quv);
-      console.log('draw quv:', quv);
-
 
       gl.activeTexture(gl.TEXTURE0);
       gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
       gl.useProgram(quadShaderProgram);
-      //gl.polygonMode(gl.FRONT_AND_BACK, gl.FILL);
       gl.drawArrays(gl.TRIANGLES, 0, 6);
-      console.log('draw drawArrays zhengge :');
-
 
       //Pass two
       gl.enable(gl.BLEND);
-      // gl.enable(gl.DEPTH_TEST);
-      // gl.depthFunc(gl.LESS);
-      gl.blendFuncSeparate(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA, gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+      gl.blendFuncSeparate(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA, gl.NONE, gl.ONE);
       gl.blendEquationSeparate(gl.FUNC_ADD, gl.FUNC_ADD);
       gl.bindBuffer(gl.ARRAY_BUFFER, vertexbuffer);
       gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(lipPoints), gl.STREAM_DRAW);
 
       var aposlocation = gl.getAttribLocation(shaderProgram, 'a_position');
-      gl.vertexAttribPointer(aposlocation, 2, gl.FLOAT, false, FSIZE * 5, 0);
       gl.enableVertexAttribArray(aposlocation);
-      console.log('draw aposlocation :', aposlocation);
+      gl.vertexAttribPointer(aposlocation, 2, gl.FLOAT, false, FSIZE * 5, 0);
+
 
       var auv = gl.getAttribLocation(shaderProgram, 'a_uv');
-      gl.vertexAttribPointer(auv, 3, gl.FLOAT, false, FSIZE * 5, FSIZE * 2);
       gl.enableVertexAttribArray(auv);
-      console.log('draw auv :', auv);
+      gl.vertexAttribPointer(auv, 3, gl.FLOAT, false, FSIZE * 5, FSIZE * 2);
 
       gl.activeTexture(gl.TEXTURE0);
       gl.bindTexture(gl.TEXTURE_2D, lipTexture);
       gl.activeTexture(gl.TEXTURE1);
       gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
       gl.useProgram(shaderProgram);
-      //gl.polygonMode(gl.FRONT_AND_BACK, gl.LINE);
-
       gl.drawArrays(gl.TRIANGLES, 0, 60);
     },
-    changeLipStyle1: function changeLipStyle1(lipTexturePath) {
-      //let imgPath = '/static/images/lipColor.png';
-
-
-      //let imgPath = '/static/images/lipColor.png';
-      var imgPath = lipTexturePath;
-      img = canvas.createImage();
-      img.onload = function () {
-        gl.bindTexture(gl.TEXTURE_2D, lipTexture);
-        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img);
-      };
-      img.onerror = function (res) {
-        console.log('......图片错误..', res, img);
-      };
-      img.src = imgPath;
-    },
-    changeLipStyle: function changeLipStyle(lipTexturePath) {var _this2 = this;
+    changeLipStyle: function changeLipStyle(lipTexturePath) {var _this3 = this;
       //let imgPath = '/static/images/lipColor.png';
       // //唇彩图片
       // var img;
@@ -811,7 +1095,7 @@ var cameraTexture;var _default =
       // var imgPath;
 
       return new Promise(function (resolve, reject) {
-        console.log(_this2.canvas, '......图片.this.canvas.', lipTexturePath);
+        console.log(_this3.canvas, '......图片.this.canvas.', lipTexturePath);
         var imgPath = lipTexturePath;
         var img1 = canvas.createImage();
         img1.onload = function (res) {
@@ -825,11 +1109,24 @@ var cameraTexture;var _default =
         };
         img1.onerror = function (res) {
           console.log('......图片错误..', res, img);
-          reject();
+          reject(res);
         };
         img1.src = imgPath;
       });
 
+
+
+      // let poster = this.canvas.createImage();
+      // wx.getImageInfo({
+      //    src: lipTexturePath, //图片的网络地址
+      //    success: (res) => {
+      //      poster.src = res.path //图片缓存地址
+      //      poster.onload = (e) => {
+      //        // ctx.drawImage(poster, 0, 0, 200, 200)
+      // 		console.log(lipTexture, '......图片..', e, poster);
+      //      }
+      //    }
+      // })
     },
 
     updateFaceData: function updateFaceData(data, width, height) {
@@ -837,7 +1134,129 @@ var cameraTexture;var _default =
       gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, dataFrame);
     },
+    updateFaceData1: function updateFaceData1() {var _this4 = this;
+      return new Promise(function (resolve, reject) {
+        uni.getImageInfo({
+          src: _this4.imgModel,
+          success: function success(res) {
+            console.log('getImageInfo  updateFaceData1', res);
+            uni.getFileSystemManager().readFile({
+              filePath: res.path, // 选择图片返回的相对路径
+              // encoding: 'base64', // 编码格式
+              success: function success(res1) {
+                // 成功的回调
+                console.log(res.width, '--将图片图片转为base64方法toBase64  success--', res1.data);
+                var dataFrame = new Uint8Array(res1.data);
+                // gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
+                // gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, res.width, res.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, dataFrame);
+                resolve({ data: dataFrame, width: res.width, height: res.height });
+              },
+              fail: function fail(err) {
+                console.log('--将图片图片转为base64方法toBase64 fail--', err);
+                reject(err);
+              } });
+
+          },
+          fail: function fail(err) {
+            console.log('--getImageInfo  updateFaceData1 fail--', err);
+          } });
+
+      });
+
+    },
     drawFacePoints: function drawFacePoints(points) {
+      console.log('drawFacePoints。。。', points, points.length);
+      var pointCount = points.length;
+      if (pointCount == 0) return;
+      var vertices = [];
+      for (var i = 0; i < pointCount; i++) {
+        vertices.push(points[i][0]);
+        vertices.push(points[i][1]);
+        vertices.push(0.0);
+      }
+
+      // Create an empty buffer object to store the vertex buffer
+      var vertex_buffer = gl.createBuffer();
+      console.log('。vertex_buffer。。。');
+      //Bind appropriate array buffer to it
+      gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
+
+      // Pass the vertex data to the buffer
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
+      // Unbind the buffer
+      gl.bindBuffer(gl.ARRAY_BUFFER, null);
+      console.log('。Unbind the buffer。。。');
+      /*=========================Shaders========================*/
+
+      // vertex shader source code
+      var vertCode =
+      'attribute vec3 coordinates;' +
+
+      'void main(void) {' +
+      ' gl_Position = vec4(coordinates, 1.0);' +
+      'gl_PointSize = 10.0;' +
+      '}';
+
+      // Create a vertex shader object
+      var vertShader = gl.createShader(gl.VERTEX_SHADER);
+
+      // Attach vertex shader source code
+      gl.shaderSource(vertShader, vertCode);
+
+      // Compile the vertex shader
+      gl.compileShader(vertShader);
+
+      // fragment shader source code
+      var fragCode =
+      'void main(void) {' +
+      ' gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);' +
+      '}';
+
+      // Create fragment shader object
+      var fragShader = gl.createShader(gl.FRAGMENT_SHADER);
+
+      // Attach fragment shader source code
+      gl.shaderSource(fragShader, fragCode);
+
+      // Compile the fragmentt shader
+      gl.compileShader(fragShader);
+
+      // Create a shader program object to store
+      // the combined shader program
+      var shaderProgram = gl.createProgram();
+
+      // Attach a vertex shader
+      gl.attachShader(shaderProgram, vertShader);
+
+      // Attach a fragment shader
+      gl.attachShader(shaderProgram, fragShader);
+
+      // Link both programs
+      gl.linkProgram(shaderProgram);
+
+      // Use the combined shader program object
+      gl.useProgram(shaderProgram);
+
+      /*======== Associating shaders to buffer objects ========*/
+
+      // Bind vertex buffer object
+      gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
+
+      // Get the attribute location
+      var coord = gl.getAttribLocation(shaderProgram, "coordinates");
+      console.log('。coord。。。', coord);
+      // Point an attribute to the currently bound VBO
+      gl.vertexAttribPointer(coord, 3, gl.FLOAT, false, 0, 0);
+
+      // Enable the attribute
+      gl.enableVertexAttribArray(coord);
+
+      gl.clearColor(0.0, 0.0, 0.0, 0.0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      // Draw the triangle
+      gl.drawArrays(gl.POINTS, 0, pointCount);
+    },
+    drawFacePoints11: function drawFacePoints11(points) {
       var pointCount = points.length;
       if (pointCount == 0) return;
       var vertices = [];
@@ -861,51 +1280,54 @@ var cameraTexture;var _default =
       /*=========================Shaders========================*/
 
       // vertex shader source code
-      var vertCode = "attribute vec3 coordinates;\n\t\t    void main(void) {\n\t\t\t\tgl_Position = vec4(coordinates, 1.0);\n\t\t\t\tgl_PointSize = 5.0;\n\t\t    }";
+      var vertCode = "attribute vec3 coordinates;\n\t\t\t  void main(void) {\n\t\t\t  \tgl_Position = vec4(coordinates, 1.0);\n\t\t\t  \tgl_PointSize = 5.0;\n\t\t\t  }";
+
 
 
 
 
 
       // Create a vertex shader object
-      this.facePoints.vertShader = gl.createShader(gl.VERTEX_SHADER);
+      var vertShader = gl.createShader(gl.VERTEX_SHADER);
+
       // Attach vertex shader source code
-      gl.shaderSource(this.facePoints.vertShader, vertCode);
+      gl.shaderSource(vertShader, vertCode);
 
       // Compile the vertex shader
-      gl.compileShader(this.facePoints.vertShader);
+      gl.compileShader(vertShader);
 
       // fragment shader source code
-      var fragCode = "precision mediump float;\n\t\t\tuniform vec4 u_FragColor;\n\t\t\tvoid main(){\n\t\t\t    gl_FragColor=u_FragColor;\n\t\t\t}";
+      var fragCode = "precision mediump float;\n\t\t\t\t\t\tuniform vec4 u_FragColor;\n\t\t\t\t\t\tvoid main(){\n\t\t\t\t\t\t    gl_FragColor=u_FragColor;\n\t\t\t\t\t\t}";
+
 
 
 
 
 
       // Create fragment shader object
-      this.facePoints.fragShader = gl.createShader(gl.FRAGMENT_SHADER);
+      var fragShader = gl.createShader(gl.FRAGMENT_SHADER);
 
       // Attach fragment shader source code
-      gl.shaderSource(this.facePoints.fragShader, fragCode);
+      gl.shaderSource(fragShader, fragCode);
 
       // Compile the fragmentt shader
-      gl.compileShader(this.facePoints.fragShader);
+      gl.compileShader(fragShader);
 
       // Create a shader program object to store
       // the combined shader program
-      this.facePoints.shaderProgram = gl.createProgram();
+      var shaderProgram = gl.createProgram();
 
       // Attach a vertex shader
-      gl.attachShader(this.facePoints.shaderProgram, this.facePoints.vertShader);
+      gl.attachShader(shaderProgram, vertShader);
 
       // Attach a fragment shader
-      gl.attachShader(this.facePoints.shaderProgram, this.facePoints.fragShader);
+      gl.attachShader(shaderProgram, fragShader);
 
       // Link both programs
-      gl.linkProgram(this.facePoints.shaderProgram);
+      gl.linkProgram(shaderProgram);
 
       // Use the combined shader program object
-      gl.useProgram(this.facePoints.shaderProgram);
+      gl.useProgram(shaderProgram);
 
       /*======== Associating shaders to buffer objects ========*/
 
@@ -913,21 +1335,151 @@ var cameraTexture;var _default =
       gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
 
       // Get the attribute location
-      var coord = gl.getAttribLocation(this.facePoints.shaderProgram, 'coordinates');
+      var coord = gl.getAttribLocation(shaderProgram, "coordinates");
 
       // Point an attribute to the currently bound VBO
       gl.vertexAttribPointer(coord, 3, gl.FLOAT, false, 0, 0);
 
+      // Enable the attribute
+      gl.enableVertexAttribArray(coord);
+
       //获取uniform 变量
-      var u_FragColor = gl.getUniformLocation(this.facePoints.shaderProgram, 'u_FragColor');
+      var u_FragColor = gl.getUniformLocation(shaderProgram, "u_FragColor");
       var rgba = this.isShowFacePoints ? 1.0 : 0.0;
       //修改uniform 变量
       gl.uniform4f(u_FragColor, 1.0, 0.0, 0.0, 1.0);
 
-      // gl.clearColor(0.0,0.0,0.0,0.0);
-      // gl.clear(gl.COLOR_BUFFER_BIT);
+
+      gl.clearColor(0.0, 0.0, 0.0, 0.0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
       // Draw the triangle
       gl.drawArrays(gl.POINTS, 0, pointCount);
+    },
+    renderImg: function renderImg() {var _this5 = this;
+      var imgpath = this.imgModel;
+      console.log(imgpath, 'imgpath');
+      var canvas = this.canvas;
+      var gl = this.gl;
+      var img = canvas.createImage();
+      img.onload = function (r) {
+        console.log('图片加载成功', r);
+
+        if (!_this5.initShader(gl)) {
+          console.log('initShader is failed，初始化着色器失败');
+          return;
+        }
+        if (!_this5.initVertexs(gl)) {
+          console.log('drawVertexs is failed 设置顶点的相关信息失败 ');
+          return;
+        }
+        if (!_this5.initTextures(gl, img)) {
+          console.log('drawTextures is failed 无法配置纹理');
+          return;
+        }
+
+        console.log('gl.drawArrays');
+        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+      };
+      img.onerror = function (r) {
+        console.log('onError', r);
+      };
+      img.src = imgpath;
+
+
+    },
+    initShader: function initShader(gl) {
+
+      /*=========================Shaders========================*/
+      var vertexShader = gl.createShader(gl.VERTEX_SHADER); // 创建顶点着色器
+      gl.shaderSource(vertexShader, VSHADER_SOURCE); // 绑定顶点着色器源码
+      gl.compileShader(vertexShader); // 编译定点着色器
+
+      var fragmentShader = gl.createShader(gl.FRAGMENT_SHADER); // 创建片元着色器
+      gl.shaderSource(fragmentShader, FSHADER_SOURCE); // 绑定片元着色器源码
+      gl.compileShader(fragmentShader); // 编译片元着色器
+
+
+      var shaderProgram = gl.createProgram(); // 创建着色器程序
+      gl.attachShader(shaderProgram, vertexShader); // 指定顶点着色器
+      gl.attachShader(shaderProgram, fragmentShader); // 指定片元着色色器
+
+      gl.linkProgram(shaderProgram); // 链接程序
+      gl.useProgram(shaderProgram); //使用着色器
+      gl.program = shaderProgram;
+      return true;
+    },
+    initVertexs: function initVertexs(gl, img) {
+      // Create an empty buffer object to store the vertex buffer 创建缓冲区对象(gl.createBuffer())
+      var vertexsBuffer = gl.createBuffer();
+
+
+      if (vertexsBuffer === null) {
+        console.log("vertexsBuffer is null");
+        return false;
+      }
+      // 绑定缓冲区对象(gl.bindBuffer(target, buffer))
+      gl.bindBuffer(gl.ARRAY_BUFFER, vertexsBuffer);
+
+      // 将数据写入缓冲区对象(gl.bufferData()) WebGL 不支持直接使用 JavaScript 原始数组类型，需要转换
+      gl.bufferData(gl.ARRAY_BUFFER, this.vertexs, gl.STATIC_DRAW);
+
+      var a_Position = gl.getAttribLocation(gl.program, "a_position");
+      console.log("a_Position 的值", a_Position);
+
+      if (a_Position < 0) {
+        console.log("a_Position < 0");
+        return false;
+      }
+
+      var a_TexCoord = gl.getAttribLocation(gl.program, "a_texCoord");
+      console.log("a_TexCoord的值", a_TexCoord);
+      if (a_TexCoord < 0) {
+        console.log("a_TexCoord < 0");
+        return false;
+      }
+
+      console.log("this.vertexs", this.vertexs, 'BYTES_PER_ELEMENT:\\', this.vertexs.BYTES_PER_ELEMENT);
+      // gl.vertexAttribPointer(coord, 3, gl.FLOAT, false, 0, 0);
+      //将顶点坐标的位置赋值
+      gl.vertexAttribPointer(a_Position, 3, gl.FLOAT, false, this.vertexs.BYTES_PER_ELEMENT * 5, 0);
+      // 赋能-批处理
+      gl.enableVertexAttribArray(a_Position);
+
+      //将纹理坐标赋值
+      gl.vertexAttribPointer(a_TexCoord, 2, gl.FLOAT, false, this.vertexs.BYTES_PER_ELEMENT * 5, this.vertexs.BYTES_PER_ELEMENT * 3);
+      gl.enableVertexAttribArray(a_TexCoord);
+
+      return true;
+    },
+    initTextures: function initTextures(gl, img) {
+
+      var textureId = gl.createTexture(); //创建纹理对象
+
+      if (textureId === null) {
+        console.log("textureId is null");
+        return false;
+      }
+
+
+      gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 1); // 对纹理图像进行y轴反转
+      gl.activeTexture(gl.TEXTURE0); // 开启0号纹理单元
+      gl.bindTexture(gl.TEXTURE_2D, textureId); // 向target绑定纹理对象
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); // 配置纹理参数
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img); // 配置纹理图像
+
+      var u_image = gl.getUniformLocation(gl.program, "u_image");
+      if (u_image < 0) {
+        console.log("u_image < 0");
+        return false;
+      }
+      gl.uniform1i(u_image, 0); // 将0号纹理传递给着色器
+
+      return true;
     } },
 
   mounted: function mounted() {},
@@ -941,6 +1493,14 @@ var cameraTexture;var _default =
     // 退出释放资源
     this.releaseRenderResource();
   },
+  onShareAppMessage: function onShareAppMessage() {},
+  onShareTimeline: function onShareTimeline() {
+    return {
+      title: '自定义转发标题',
+      query: '?openid=123',
+      imageUrl: '' };
+
+  },
   onUnload: function onUnload() {},
   onHide: function onHide() {} };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
@@ -950,24 +1510,24 @@ var cameraTexture;var _default =
 /* 19 */,
 /* 20 */,
 /* 21 */
-/*!********************************************************************************************************!*\
-  !*** C:/Users/lixiaoyan/Desktop/test-ar-markup/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** E:/other/diaoyan/ar/test-ar-markup/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./index.vue?vue&type=style&index=0&lang=css& */ 22);
-/* harmony import */ var _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_E_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--6-oneOf-1-3!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!../../../../../../软件/HBuilderX.3.3.11.20220209/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!./index.vue?vue&type=style&index=0&lang=css& */ 22);
+/* harmony import */ var _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_loaders_stylePostLoader_js_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_6_oneOf_1_2_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_3_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_index_js_vue_loader_options_HBuilderX_3_3_11_20220209_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_style_js_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 /* 22 */
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/lixiaoyan/Desktop/test-ar-markup/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!E:/other/diaoyan/ar/test-ar-markup/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
