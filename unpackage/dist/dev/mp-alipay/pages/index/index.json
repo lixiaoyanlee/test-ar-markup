@@ -1,5 +1,6 @@
 {
-  "defaultTitle": "uni-app",
+  "defaultTitle": "AR试妆",
   "pullRefresh": false,
+  "titleBarColor": "#514B4D",
   "usingComponents": {}
 }

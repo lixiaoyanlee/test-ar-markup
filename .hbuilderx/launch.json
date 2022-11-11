@@ -10,7 +10,15 @@
      	{
      		"launchtype" : "local"
      	},
+     	"mp-jd" : 
+     	{
+     		"launchtype" : "local"
+     	},
      	"mp-kuaishou" : 
+     	{
+     		"launchtype" : "local"
+     	},
+     	"mp-toutiao" : 
      	{
      		"launchtype" : "local"
      	},

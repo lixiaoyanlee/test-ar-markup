@@ -1,27 +1,26 @@
 <template>
 	<view class="container">
-	<!-- <image
+	<image
 		:src="imgModel"
 		class="mode-img"
 		
 		:style="{ width: canvasObj.width + 'px', height: canvasObj.height + 'px', top: canvasObj.top + 'px', left: canvasObj.left + 'px' }"
-	></image> -->
+	></image>
 	<button style="position: absolute;top: 100px; "> 哈哈哈</button>
 	<!-- h5、app-vue 中单个尺寸过大的 canvas 在 iOS/Safari 无法绘制（具体限制尺寸未公布） -->
 	<canvas
 		id="arcanvas"
 		class="arcanvas"
 		type="webgl"
-		@ready="onCanvasReady('arcanvas')"
+		@ready.native="onCanvasReady('arcanvas')"
 		:style="{ width: canvasObj.width + 'px', height: canvasObj.height + 'px', top: canvasObj.top + 'px', left: canvasObj.left + 'px' }"
 	></canvas>
-	
 	<button style="position: absolute;top: 200px; z-index: 22;"> 略略</button>
 	
 	</view>
 </template>
 <!-- 
- 此版本微信没有问题，目前是i
+ 此版本微信没有问题，目前是ios和安卓都可以
  
  -->
 <script>
@@ -226,7 +225,7 @@ export default {
 			],
 			translucent: 0.5,
 			imgLipstick: '/static/images/ar-makup/lipColor1.png',
-			imgModel: '/static/images/ar-makup/model2.jpg',
+			imgModel: '/static/images/ar-makup/model1.jpg',
 			// imgLipstick: 'https://cdn-mdj.oss-cn-beijing.aliyuncs.com/common/test-ar-makeup/lipColor1.png',
 			// imgModel: 'https://cdn-mdj.oss-cn-beijing.aliyuncs.com/common/test-ar-makeup/model.jpg',
 			isFaceBeauty: true,
@@ -246,22 +245,19 @@ export default {
 		this.imgLoad()
 	},
 	
-	onReady() {
-		
-	},
+	onReady() {},
 	methods: {
 		imgLoad(e) {
 			// console.log(e, 'width', e.detail.width);
 			// console.log('height：', e.detail.height);
-			
+			this.handleARFrame1();
 			var self = this;
 			translucent = 0.5;
 			lipMarkBeginIndex = this.lipMarkBeginIndex = 84;
 			lipScale = this.lipScale = 0.01;
 			
 			var systemInfo = uni.getSystemInfoSync();
-			// let wImg = 1389,hImg = 1852;
-			 let wImg = 694,hImg = 926;
+			let wImg = 1389,hImg = 1852;
 			// this.imgWidth = e.detail.width
 			// this.imgHeight = e.detail.height
 			this.imgWidth = wImg
@@ -283,23 +279,19 @@ export default {
 				this.canvasObj.left = 0;
 			}
 			this.canvasObj.pixelRatio = systemInfo.pixelRatio;
-			this.handleARFrame1();
 			console.log(w / h < r, '。。。。。。。this.canvasObj。。。', this.canvasObj);
-			// #ifdef MP-WEIXIN || MP-KUAISHOU || MP-JD || MP-TOUTIAO
+			// #ifdef MP-WEIXIN
 			setTimeout(()=>{
 				this.canvasWxFn();
 			},1000)
 			// #endif
-			// #ifdef H5
-			   
-			// #endiff
 		},
 		canvasWxFn() {
 			
-			// #ifdef MP-WEIXIN || MP-KUAISHOU || MP-JD || MP-TOUTIAO
-			console.log('.....canvasWxFn开始执行.....')
+			// #ifdef MP-WEIXIN
+			
 			try {
-				uni.createSelectorQuery()
+				wx.createSelectorQuery()
 				      .select('#arcanvas')
 				      .node()
 				      .exec(res => {
@@ -310,8 +302,8 @@ export default {
 						// }
 						var systemInfo = uni.getSystemInfoSync();
 						console.log('。。。systemInfo。。', this.canvasObj, this.canvasObj);
-						// c.height = this.canvasObj.height;
-						// c.width = this.canvasObj.width;
+						c.height = this.canvasObj.height;
+						c.width = this.canvasObj.width;
 						console.log(c.width, '。。。。。。。uni.createCanvas。。success。', c);
 						this.gl = c.getContext('webgl');
 						gl = this.gl;
@@ -330,12 +322,12 @@ export default {
 						]).then(res=>{
 							console.log('zhixingwanbi 哈哈哈',res)
 							
+							this.lipRenderPipeline()
 							this.quadRenderPipeline();
 							this.drawQuan(res[1])
 							
-							this.lipRenderPipeline();
 							this.drawLip(res[0])
-							this.drawFacePoints11(this.points);
+							// this.drawFacePoints(this.points);
 						}).catch(err=>{
 							console.log('失败 哈哈哈',err)
 						})
@@ -354,47 +346,61 @@ export default {
 			// this.imgLoad();
 			// #ifdef MP-ALIPAY
 			try{
-				
 				my._createCanvas({
 					id,
 					success: (c) => {
-						
-						var systemInfo = uni.getSystemInfoSync();
-						console.log('。。。systemInfo。。', this.canvasObj, systemInfo);
-						// c.height = 926*systemInfo.pixelRatio;
-						// c.width = 694*systemInfo.pixelRatio;
-						console.log(c.width, '。。。。。。。uni.createCanvas。。success。', c);
+						var systemInfo = my.getSystemInfoSync();
+						console.log('。。。systemInfo。。',JSON.stringify(systemInfo))
+						// c.height = 1852;
+						// c.width = 1389;
+						console.log('。。。。。。。my.createCanvas。。success。',c);
 						this.gl = c.getContext('webgl');
 						gl = this.gl;
 						this.canvas = c;
 						canvas = c;
-						console.log(this.points,'。。。。。。。uni.createCanvas。。success。', gl);
 						this.renderImg()
-						
-						Promise.all([
-							this.changeLipStyle(this.imgLipstick),
-							this.changeLipStyle(this.imgModel)
-						]).then(res=>{
-							console.log('zhixingwanbi 哈哈哈',res)
-							// this.renderImg()
-							setTimeout(()=>{
-								this.quadRenderPipeline();
-								this.drawQuan(res[1])
-								
-								this.lipRenderPipeline();
-								this.drawLip(res[0])
-								this.drawFacePoints11(this.points);
-							},50)
-							
-						}).catch(err=>{
-							console.log('失败 哈哈哈',err)
-						})
-						},
+						// this.drawFacePoints(this.points);
+					},
 					fail:()=>{
 						console.log('。。。。。。。my.createCanvas。。fail。');
 					}
+				});
+				// my._createCanvas({
+				// 	id:'arcanvas',
+				// 	success: (c) => {
 						
-					})
+				// 		var systemInfo = uni.getSystemInfoSync();
+				// 		console.log('。。。systemInfo。。', this.canvasObj, this.canvasObj);
+				// 		c.height = 1852*systemInfo.pixelRatio;
+				// 		c.width = 1389*systemInfo.pixelRatio;
+				// 		console.log(c.width, '。。。。。。。uni.createCanvas。。success。', c);
+				// 		this.gl = c.getContext('webgl');
+				// 		gl = this.gl;
+				// 		this.canvas = c;
+				// 		canvas = c;
+				// 		console.log(this.points,'。。。。。。。uni.createCanvas。。success。', gl);
+				// 		// this.renderImg()
+						
+				// 		Promise.all([
+				// 			// this.changeLipStyle(this.imgLipstick),’
+				// 			this.changeLipStyle(this.imgModel)
+				// 		]).then(res=>{
+				// 			console.log('zhixingwanbi 哈哈哈',res)
+				// 			// this.lipRenderPipeline();
+				// 			// this.quadRenderPipeline();
+				// 			// this.drawQuan(res[1])
+							
+				// 			// this.drawLip(res[0])
+				// 			this.drawFacePoints(this.points);
+				// 		}).catch(err=>{
+				// 			console.log('失败 哈哈哈',err)
+				// 		})
+				// 		},
+				// 	fail:()=>{
+				// 		console.log('。。。。。。。my.createCanvas。。fail。');
+				// 	}
+						
+				// 	})
 			}catch(e){
 				console.log('。。。。。。。my.createCanvas。。catch。',e);
 			}
@@ -403,9 +409,7 @@ export default {
 			// #endif
 		},
 		handleARFrame1() {
-			console.log('...handleARFrame1...',this.points84By63)
-			var rawPoints = this.points84By63.map(item=>item*0.3);
-			console.log('...handleARFrame1.rawPoints..',rawPoints,this.imgWidth, this.imgHeight)
+			var rawPoints = this.points84By63.map(item=>item*0.6);
 			let len = 106;
 			for (var i = 0; i < 84; i++) {
 				rawPoints.unshift(0.1, 0.1);
@@ -481,7 +485,7 @@ export default {
 			}
 			console.log("quadVertexbuffer", quadVertexbuffer);
 			// 绑定缓冲区对象(gl.bindBuffer(target, buffer))
-			// gl.disable(gl.BLEND);
+			gl.disable(gl.BLEND);
 			gl.bindBuffer(gl.ARRAY_BUFFER, quadVertexbuffer);
 			// 将数据写入缓冲区对象(gl.bufferData()) WebGL 不支持直接使用 JavaScript 原始数组类型，需要转换
 			gl.bufferData(gl.ARRAY_BUFFER, quadVertex, gl.STATIC_DRAW);
@@ -502,10 +506,8 @@ export default {
 			  console.log("cameraTexture is null");
 			  // return false;
 			}
-			// gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 1); // 对纹理图像进行y轴反转
 			gl.activeTexture(gl.TEXTURE0);// 开启0号纹理单元
 			gl.bindTexture(gl.TEXTURE_2D, cameraTexture); // 向target绑定纹理对象
-			
 			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
 			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
 			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
@@ -513,12 +515,12 @@ export default {
 			console.log("cameraTexture ", cameraTexture);
 			
 			
-			gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
+			// gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
 			gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res);
 			
 			// gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
 				  
-			// gl.useProgram(quadShaderProgram);
+			gl.useProgram(quadShaderProgram);
 			gl.drawArrays(gl.TRIANGLES, 0, 6);
 		},
 		lipRenderPipeline() {
@@ -544,7 +546,6 @@ export default {
 			      void main() {
 			
 			        vec2 uv = vec2(uv_out.x, 1.0 - uv_out.y);
-					// vec2 uv = vec2(uv_out.x, uv_out.y);
 			        vec3 lipColor = texture(u_texture, uv).xyz;
 			        vec3 c = lipColor;
 			        vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
@@ -644,8 +645,8 @@ export default {
 			gl.vertexAttribPointer(auv, 3, gl.FLOAT, false, FSIZE * 5, FSIZE * 2);
 			console.log("auv的值 ", auv);
 			
-			gl.useProgram(0);
-			gl.bindTexture(0);
+			// gl.useProgram(0);
+			// gl.bindTexture(0);
 			lipTexture = gl.createTexture();
 			console.log("lipTexture gl.createTexture", lipTexture);
 			if (lipTexture === null) {
@@ -660,14 +661,13 @@ export default {
 			gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res); // 配置纹理图像
 			console.log("createTexturecreateTexture ", lipTexture);
 			
-			gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 1); // 对纹理图像进行y轴反转
-			gl.activeTexture(gl.TEXTURE1);
-			gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
 			
 			gl.activeTexture(gl.TEXTURE0);
 			gl.bindTexture(gl.TEXTURE_2D, lipTexture);
 			
 			
+			gl.activeTexture(gl.TEXTURE1);
+			gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
 			gl.useProgram(shaderProgram);
 			
 			gl.drawArrays(gl.TRIANGLES, 0, 60);
@@ -994,48 +994,6 @@ export default {
 			gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
 			gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, dataFrame);
 		},
-		initShaders(gl, vsSource, fsSource) {
-		  //创建程序对象
-		  const program = gl.createProgram();
-		  //建立着色对象
-		  const vertexShader = this.loadShader(gl, gl.VERTEX_SHADER, vsSource);
-		  const fragmentShader = this.loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
-		  //把顶点着色对象装进程序对象中
-		  gl.attachShader(program, vertexShader);
-		  //把片元着色对象装进程序对象中
-		  gl.attachShader(program, fragmentShader);
-		  //连接webgl上下文对象和程序对象
-		  gl.linkProgram(program);
-		  //启动程序对象
-		  gl.useProgram(program);
-		  //将程序对象挂到上下文对象上
-		  gl.program = program;
-		  return true;
-		},
-		 createProgram(gl, vsSource, fsSource) {
-		  //创建程序对象
-		  const program = gl.createProgram();
-		  //建立着色对象
-		  const vertexShader = this.loadShader(gl, gl.VERTEX_SHADER, vsSource);
-		  const fragmentShader = this.loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
-		  //把顶点着色对象装进程序对象中
-		  gl.attachShader(program, vertexShader);
-		  //把片元着色对象装进程序对象中
-		  gl.attachShader(program, fragmentShader);
-		  //连接webgl上下文对象和程序对象
-		  gl.linkProgram(program);
-		  return program
-		},
-		loadShader(gl, type, source) {
-		  //根据着色类型，建立着色器对象
-		  const shader = gl.createShader(type);
-		  //将着色器源文件传入着色器对象中
-		  gl.shaderSource(shader, source);
-		  //编译着色器对象
-		  gl.compileShader(shader);
-		  //返回着色器对象
-		  return shader;
-		},
 		updateFaceData1() {
 			return new Promise((resolve,reject)=>{
 				uni.getImageInfo({
@@ -1067,39 +1025,96 @@ export default {
 			
 		},
 		drawFacePoints(points) {
-			
+			console.log('drawFacePoints。。。',points,points.length)
+		    var pointCount = points.length;
+		    if (pointCount == 0) return;
+		    var vertices = [];
+		    for (var i = 0; i < pointCount; i++) {
+		      vertices.push(points[i][0]);
+		      vertices.push(points[i][1]);
+		      vertices.push(0.0);
+		    }
+		
+		    // Create an empty buffer object to store the vertex buffer
+		    var vertex_buffer = gl.createBuffer(); 
+			console.log('。vertex_buffer。。。')
+		    //Bind appropriate array buffer to it
+		    gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer); 
+		
+		    // Pass the vertex data to the buffer
+		    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW); 
+		    // Unbind the buffer
+		    gl.bindBuffer(gl.ARRAY_BUFFER, null); 
+		console.log('。Unbind the buffer。。。')
+		    /*=========================Shaders========================*/
 		
 		    // vertex shader source code
 		    var vertCode =
-		      `
-			  void main(){
-			    //点位
-			    gl_Position=vec4(1,1,1,2);
-			    //尺寸
-			    gl_PointSize=50.0;
-			  }
-			  `;
+		      'attribute vec3 coordinates;' +
 		
+		      'void main(void) {' +
+		         ' gl_Position = vec4(coordinates, 1.0);' +
+		         'gl_PointSize = 10.0;'+
+		      '}';
+		
+		    // Create a vertex shader object
+		    var vertShader = gl.createShader(gl.VERTEX_SHADER);
+		
+		    // Attach vertex shader source code
+		    gl.shaderSource(vertShader, vertCode);
+		
+		    // Compile the vertex shader
+		    gl.compileShader(vertShader);
 		
 		    // fragment shader source code
 		    var fragCode =
-		      `
-			  void main(){
-			    gl_FragColor=vec4(1,1,0,1);
-			  }
-			  `;
+		      'void main(void) {' +
+		         ' gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);' +
+		      '}';
 		
-		//初始化着色器
-		//功能：解析着色器文本，整合到程序对象里，关联webgl上下文对象，实现两种语言的相互通信
-		this.initShaders(gl, vertCode, fragCode);
+		    // Create fragment shader object
+		    var fragShader = gl.createShader(gl.FRAGMENT_SHADER);
 		
-		//声明颜色 rgba
-		gl.clearColor(0, 0, 0, 1);
-		//刷底色
-		gl.clear(gl.COLOR_BUFFER_BIT);
+		    // Attach fragment shader source code
+		    gl.shaderSource(fragShader, fragCode);
 		
-		//绘制顶点
-		gl.drawArrays(gl.POINTS, 0, 1);
+		    // Compile the fragmentt shader
+		    gl.compileShader(fragShader);
+		
+		    // Create a shader program object to store
+		    // the combined shader program
+		    var shaderProgram = gl.createProgram();
+		
+		    // Attach a vertex shader
+		    gl.attachShader(shaderProgram, vertShader); 
+		
+		    // Attach a fragment shader
+		    gl.attachShader(shaderProgram, fragShader);
+		
+		    // Link both programs
+		    gl.linkProgram(shaderProgram);
+		
+		    // Use the combined shader program object
+		    gl.useProgram(shaderProgram);
+		
+		    /*======== Associating shaders to buffer objects ========*/
+		
+		    // Bind vertex buffer object
+		    gl.bindBuffer(gl.ARRAY_BUFFER, vertex_buffer);
+		
+		    // Get the attribute location
+		    var coord = gl.getAttribLocation(shaderProgram, "coordinates");
+		console.log('。coord。。。',coord)
+		    // Point an attribute to the currently bound VBO
+		    gl.vertexAttribPointer(coord, 3, gl.FLOAT, false, 0, 0);
+		
+		    // Enable the attribute
+		    gl.enableVertexAttribArray(coord);
+		
+		    gl.clearColor(0.0,0.0,0.0,0.0);
+		    gl.clear(gl.COLOR_BUFFER_BIT);
+		    // Draw the triangle
+		    gl.drawArrays(gl.POINTS, 0, pointCount);
 		  },
 		drawFacePoints11(points) {
 			var pointCount = points.length;
@@ -1195,8 +1210,8 @@ export default {
 			gl.uniform4f(u_FragColor, 1.0, 0.0, 0.0, 1.0);
 			
 			
-			// gl.clearColor(0.0,0.0,0.0,0.0);
-			// gl.clear(gl.COLOR_BUFFER_BIT);
+			gl.clearColor(0.0,0.0,0.0,0.0);
+			gl.clear(gl.COLOR_BUFFER_BIT);
 			// Draw the triangle
 			gl.drawArrays(gl.POINTS, 0, pointCount);
 		},
@@ -1353,8 +1368,8 @@ export default {
 <style>
 .container {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 }
 .mode-img {
 	position: absolute;

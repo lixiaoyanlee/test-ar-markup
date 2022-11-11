@@ -1,5 +1,7 @@
 {
-  "navigationBarTitleText": "uni-app",
+  "navigationBarTitleText": "AR试妆",
+  "navigationBarBackgroundColor": "#514B4D",
+  "navigationBarTextStyle": "black",
   "enablePullDownRefresh": false,
   "usingComponents": {}
 }

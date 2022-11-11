@@ -8,14 +8,22 @@
 	></image> -->
 	<button style="position: absolute;top: 100px; "> 哈哈哈</button>
 	<!-- h5、app-vue 中单个尺寸过大的 canvas 在 iOS/Safari 无法绘制（具体限制尺寸未公布） -->
+	
+	<!-- #ifdef APP-PLUS || H5 -->
 	<canvas
 		id="arcanvas"
 		class="arcanvas"
 		type="webgl"
-		@ready="onCanvasReady('arcanvas')"
 		:style="{ width: canvasObj.width + 'px', height: canvasObj.height + 'px', top: canvasObj.top + 'px', left: canvasObj.left + 'px' }"
 	></canvas>
-	
+	<!-- #endif -->
+	<!-- #ifndef APP-PLUS || H5 -->
+	<canvas
+		id="arcanvas"
+		class="arcanvas"
+		:style="{ width: canvasObj.width + 'px', height: canvasObj.height + 'px', top: canvasObj.top + 'px', left: canvasObj.left + 'px' }"
+	></canvas>
+	<!-- #endif -->
 	<button style="position: absolute;top: 200px; z-index: 22;"> 略略</button>
 	
 	</view>
@@ -24,7 +32,8 @@
  此版本微信没有问题，目前是i
  
  -->
-<script>
+
+<script  >
 	var VSHADER_SOURCE = "" +
 	  "attribute vec4 a_position;" +//
 	  "attribute vec2 a_texCoord;" +//
@@ -166,7 +175,7 @@ var dataFrame;
 var lipScale;
 // var points = []
 export default {
-	name: 'ar-camera-com',
+	name: 'ar-camera-com-h5',
 	data() {
 		return {
 			points:[],
@@ -247,7 +256,12 @@ export default {
 	},
 	
 	onReady() {
-		
+		// #ifdef H5
+		this.$nextTick(()=>{
+			 this.canvasH5()
+		})
+		  
+		// #endif
 	},
 	methods: {
 		imgLoad(e) {
@@ -285,392 +299,60 @@ export default {
 			this.canvasObj.pixelRatio = systemInfo.pixelRatio;
 			this.handleARFrame1();
 			console.log(w / h < r, '。。。。。。。this.canvasObj。。。', this.canvasObj);
-			// #ifdef MP-WEIXIN || MP-KUAISHOU || MP-JD || MP-TOUTIAO
-			setTimeout(()=>{
-				this.canvasWxFn();
-			},1000)
-			// #endif
-			// #ifdef H5
-			   
-			// #endiff
-		},
-		canvasWxFn() {
 			
-			// #ifdef MP-WEIXIN || MP-KUAISHOU || MP-JD || MP-TOUTIAO
-			console.log('.....canvasWxFn开始执行.....')
-			try {
-				uni.createSelectorQuery()
-				      .select('#arcanvas')
-				      .node()
-				      .exec(res => {
-						console.log('drawAiwendy', res);
-						const c = res[0].node;
-						// if(!c){
-							
-						// }
-						var systemInfo = uni.getSystemInfoSync();
-						console.log('。。。systemInfo。。', this.canvasObj, this.canvasObj);
-						// c.height = this.canvasObj.height;
-						// c.width = this.canvasObj.width;
-						console.log(c.width, '。。。。。。。uni.createCanvas。。success。', c);
-						this.gl = c.getContext('webgl');
-						gl = this.gl;
-						if (!gl) {
-						  console.log('webgl未受支持');
-						  return
-						}
-						this.canvas = c;
-						canvas = c;
-						console.log(this.points,'。。。。。。。uni.createCanvas。。success。', gl);
-						// this.renderImg()
-						
-						Promise.all([this.changeLipStyle(this.imgLipstick),
-							// this.updateFaceData1()
-							this.changeLipStyle(this.imgModel)
-						]).then(res=>{
-							console.log('zhixingwanbi 哈哈哈',res)
-							
-							this.quadRenderPipeline();
-							this.drawQuan(res[1])
-							
-							this.lipRenderPipeline();
-							this.drawLip(res[0])
-							this.drawFacePoints11(this.points);
-						}).catch(err=>{
-							console.log('失败 哈哈哈',err)
-						})
-						
-					});
-			} catch (e) {
-				//TODO handle the exception
-				console.log('....', e);
-			}
 			
-			// #endif
-			// this.onCanvasReady('arcanvas')
 		},
-		onCanvasReady(id){
-			console.log('onCanvasReady kaishi 哈哈哈')
-			// this.imgLoad();
-			// #ifdef MP-ALIPAY
-			try{
-				
-				my._createCanvas({
-					id,
-					success: (c) => {
-						
-						var systemInfo = uni.getSystemInfoSync();
-						console.log('。。。systemInfo。。', this.canvasObj, systemInfo);
-						// c.height = 926*systemInfo.pixelRatio;
-						// c.width = 694*systemInfo.pixelRatio;
-						console.log(c.width, '。。。。。。。uni.createCanvas。。success。', c);
-						this.gl = c.getContext('webgl');
-						gl = this.gl;
-						this.canvas = c;
-						canvas = c;
-						console.log(this.points,'。。。。。。。uni.createCanvas。。success。', gl);
-						this.renderImg()
-						
-						Promise.all([
-							this.changeLipStyle(this.imgLipstick),
-							this.changeLipStyle(this.imgModel)
-						]).then(res=>{
-							console.log('zhixingwanbi 哈哈哈',res)
-							// this.renderImg()
-							setTimeout(()=>{
-								this.quadRenderPipeline();
-								this.drawQuan(res[1])
-								
-								this.lipRenderPipeline();
-								this.drawLip(res[0])
-								this.drawFacePoints11(this.points);
-							},50)
-							
-						}).catch(err=>{
-							console.log('失败 哈哈哈',err)
-						})
-						},
-					fail:()=>{
-						console.log('。。。。。。。my.createCanvas。。fail。');
-					}
-						
-					})
-			}catch(e){
-				console.log('。。。。。。。my.createCanvas。。catch。',e);
-			}
+		canvasH5(){
+			
+			let canvas1 = document.querySelectorAll('.arcanvas>canvas')[0];
+				console.log(canvas1.childNodes,'。。canvascanvas。。。',this.canvas)
+				canvas1.height = this.canvasObj.height* this.canvasObj.pixelRatio;
+				canvas1.width = this.canvasObj.width* this.canvasObj.pixelRatio;
+			//通过getElementById()方法获取canvas画布
+		// let cc = document.querySelector("#arcanvas>canvas")
+			// console.log(document.querySelector("#arcanvas").childNodes,'。。cc。。。',cc[0],cc.getContext('2d'),'webgl experimental-webgl',cc.getContext('experimental-webgl'))
+			// //通过方法getContext()获取WebGL上下文
+		// this.gl = canvas1.getContext('webgl') || canvas1.getContext( 'experimental-webgl' ) ;
+			console.log(gl===null,'。。gl。。。',this.gl)
+			// const canvas = document.querySelector("#arcanvas");
+			//     const gl = canvas.getContext("webgl");
 			
 		
-			// #endif
-		},
-		handleARFrame1() {
-			console.log('...handleARFrame1...',this.points84By63)
-			var rawPoints = this.points84By63.map(item=>item*0.3);
-			console.log('...handleARFrame1.rawPoints..',rawPoints,this.imgWidth, this.imgHeight)
-			let len = 106;
-			for (var i = 0; i < 84; i++) {
-				rawPoints.unshift(0.1, 0.1);
-			}
-			for (var i = 104; i < len; i++) {
-				rawPoints.push(0.1, 0.1);
-			}
-			function transformPoint(point, fw, fh) {
-				return [(point[0] / fw) * 2 - 1, (1 - point[1] / fh) * 2 - 1];
-			}
-			var points = []
-
-			for (var i = 0; i < 106; i++) {
-				points.push(transformPoint([rawPoints[i * 2], rawPoints[i * 2 + 1]], this.imgWidth, this.imgHeight));
-			}
-			console.log(points,'...gl 出来了么....')
-			this.points = points;
-		},
-		quadRenderPipeline() {
-			/*=========================Shaders========================*/
-			const FSIZE = 4;
-			var quadVertCode =
-			  `#version 300 es
-			      layout(location = 0) in vec2 a_position;
-			      layout(location = 1) in vec2 a_uv;
-			      out vec2 uv_out;
-			      void main() {
-			        gl_Position = vec4(a_position, 1.0, 1.0);
-			        uv_out = a_uv;
-			      }
-			      `;
-			const quadFragCode =
-			  `#version 300 es
-			      precision mediump float;
-			      in vec2 uv_out;
-			      uniform sampler2D u_texture;
-			      layout(location = 0) out vec4 outColor;
-			      void main() {
-			        vec2 uv = vec2(uv_out.x, uv_out.y);
-			        outColor = vec4(texture(u_texture, uv).xyz, 1.0);
-			      }
-			      `;
-				  console.log("quadVertShader的值", quadVertShader);
-			quadVertShader = gl.createShader(gl.VERTEX_SHADER); // 创建顶点着色器
-			gl.shaderSource(quadVertShader, quadVertCode); // 绑定顶点着色器源码
-			gl.compileShader(quadVertShader); // 编译定点着色器
-			
-			console.log("quadVertShader的值1", quadVertShader);
-			
-			quadFragShader = gl.createShader(gl.FRAGMENT_SHADER); // 创建片元着色器
-			gl.shaderSource(quadFragShader, quadFragCode); // 绑定片元着色器源码
-			gl.compileShader(quadFragShader); // 编译片元着色器
-			console.log("quadFragShader的值", quadFragShader);
-			
-			quadShaderProgram = gl.createProgram();  // 创建着色器程序
-			gl.attachShader(quadShaderProgram, quadVertShader); // 指定顶点着色器
-			gl.attachShader(quadShaderProgram, quadFragShader);  // 指定片元着色色器
-			gl.linkProgram(quadShaderProgram);  // 链接程序
-			gl.useProgram(quadShaderProgram);  //使用着色器
-			console.log("quadShaderProgram 渲染成功否");
+		let s = `<canvas id="canvasId" width="1344" height="1792" 
+		 style="width: ${this.canvasObj.width}px; height:${this.canvasObj.height}px;top:${this.canvasObj.top}px;left:${this.canvasObj.left}px;position:absolute;z-index:12;"
+		 ></canvas>`
+		let dom = document.createElement('div')
+		dom.innerHTML = s;
+		document.body.appendChild(dom)
+		canvas = this.canvas  = document.getElementById('canvasId')
+		
+		console.log('。。canvas。。。',canvas.childNodes)
+		gl = this.gl = 	canvas.getContext('webgl')
+		console.log('。。ctx。。。',gl)
+		setTimeout(()=>{
 			
 			
-		},
-		drawQuan(res){
-			 // gl.useProgram(0);
-			gl.clearColor(0.0, 0.0, 0.0, 0.0);
-			gl.clear(gl.COLOR_BUFFER_BIT);	
-			
-			const FSIZE = 4;
-			quadVertexbuffer = gl.createBuffer(); //  创建缓冲区对象(gl.createBuffer())
-			if (quadVertexbuffer === null) {
-			      console.log("quadVertexbuffer is null");
-			}
-			console.log("quadVertexbuffer", quadVertexbuffer);
-			// 绑定缓冲区对象(gl.bindBuffer(target, buffer))
-			// gl.disable(gl.BLEND);
-			gl.bindBuffer(gl.ARRAY_BUFFER, quadVertexbuffer);
-			// 将数据写入缓冲区对象(gl.bufferData()) WebGL 不支持直接使用 JavaScript 原始数组类型，需要转换
-			gl.bufferData(gl.ARRAY_BUFFER, quadVertex, gl.STATIC_DRAW);
-			
-			const qposlocation = gl.getAttribLocation(quadShaderProgram, 'a_position');
-			gl.vertexAttribPointer(qposlocation, 2, gl.FLOAT, false, FSIZE * 4, 0);  //将顶点坐标的位置赋值
-			gl.enableVertexAttribArray(qposlocation);    // 赋能-批处理
-			console.log("qposlocation", qposlocation);
-			
-			const quv = gl.getAttribLocation(quadShaderProgram, 'a_uv');
-			gl.vertexAttribPointer(quv, 2, gl.FLOAT, false, FSIZE * 4, FSIZE * 2);
-			gl.enableVertexAttribArray(quv);
-			console.log("quv 222", quv);
-			
-			cameraTexture = gl.createTexture(); //创建纹理对象
-			console.log("cameraTexture gl.createTexture", cameraTexture);
-			if (cameraTexture === null) {
-			  console.log("cameraTexture is null");
-			  // return false;
-			}
-			// gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 1); // 对纹理图像进行y轴反转
-			gl.activeTexture(gl.TEXTURE0);// 开启0号纹理单元
-			gl.bindTexture(gl.TEXTURE_2D, cameraTexture); // 向target绑定纹理对象
-			
-			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
-			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
-			console.log("cameraTexture ", cameraTexture);
+			this.initRenderPipeline();
+			Promise.all([this.changeLipStyle(this.imgLipstick),
+				this.changeLipStyle(this.imgModel)
+			]).then(res=>{
+				console.log('zhixingwanbi 哈哈哈',res)
+				this.quadRenderPipeline(gl);
+				this.drawQuan(res[1])
+				
+				// this.lipRenderPipeline();
+				// this.drawLip(res[0])
+				// this.renderImg()
+				// this.drawFacePoints11(this.points);
+				
+				// this.drawFacePoints(this.points);
+			}).catch(err=>{
+				console.log('失败 哈哈哈',err)
+			})
+		})
+		
 			
 			
-			gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
-			gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res);
-			
-			// gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
-				  
-			// gl.useProgram(quadShaderProgram);
-			gl.drawArrays(gl.TRIANGLES, 0, 6);
-		},
-		lipRenderPipeline() {
-			const FSIZE = 4;
-			var vertCode =
-			  `#version 300 es
-			      layout(location = 0) in vec2 a_position;
-			      layout(location = 1) in vec3 a_uv;
-			      out vec3 uv_out;
-			      void main() {
-			        gl_Position = vec4(a_position, 1.0, 1.0);
-			        uv_out = a_uv;
-			        //uv_out = vec2(1.0, 0.0);
-			      }
-			      `;
-			const fragCode =
-			  `#version 300 es
-			      precision mediump float;
-			      in vec3 uv_out;
-			      uniform sampler2D u_texture;
-			      uniform sampler2D u_texture2;
-			      layout(location = 0) out vec4 outColor;
-			      void main() {
-			
-			        vec2 uv = vec2(uv_out.x, 1.0 - uv_out.y);
-					// vec2 uv = vec2(uv_out.x, uv_out.y);
-			        vec3 lipColor = texture(u_texture, uv).xyz;
-			        vec3 c = lipColor;
-			        vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
-			        vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));
-			        vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));
-			
-			        float d = q.x - min(q.w, q.y);
-			        float e = 1.0e-10;
-			        vec3 hc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
-			
-			        hc.y *= 1.2;
-			
-			        vec4 L = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
-			        vec3 M = abs(fract(hc.xxx + L.xyz) * 6.0 - L.www);
-			        vec3 color = hc.z * mix(L.xxx, clamp(M - L.xxx, 0.0, 1.0), hc.y);
-			
-			        //outColor = vec4(color, 1.0);
-			        
-			        
-			        //vec4 lipColor = texture(u_texture, uv);
-			        vec4 frameColor = texture(u_texture2, uv_out.xy);
-			        //vec3 finalColor = lipColor.xyz * lipColor.w + frameColor.xyz * (1.0 - lipColor.w);
-			        float alpha = texture(u_texture, uv).w;
-			        outColor = vec4(color.xyz, alpha * uv_out.z);
-			      }
-			      `;
-			
-			
-				  
-			vertShader = gl.createShader(gl.VERTEX_SHADER);
-			
-			if (vertShader === null) {
-			  console.log("vertShader is null");
-			}
-			gl.shaderSource(vertShader, vertCode);
-			gl.compileShader(vertShader);
-			
-			console.log("vertShader is compileShader ");
-			
-			fragShader = gl.createShader(gl.FRAGMENT_SHADER);
-			gl.shaderSource(fragShader, fragCode);
-			gl.compileShader(fragShader);
-			
-			
-			console.log("fragShader is compileShader ");
-			shaderProgram = gl.createProgram();
-			gl.attachShader(shaderProgram, vertShader);
-			gl.attachShader(shaderProgram, fragShader);
-			gl.linkProgram(shaderProgram);
-			gl.useProgram(shaderProgram);
-			console.log('。。。。初始化着色器是否成功。。。。');
-		},
-		drawLip(res){
-			lipPoints = [];
-			let lipPointCount = 106 * 2;
-			for (var i = 0; i < lipPointCount; i++) {
-			  lipPoints.push(0.0);
-			  lipPoints.push(0.0);
-			  lipPoints.push(0.0);
-			  lipPoints.push(0.0);
-			  lipPoints.push(0.0);
-			}
-			console.log("lipPoints的值计算开始 ");
-			
-			lipPointCount = lipIndex.length;
-			for (var i = 0; i < lipPointCount; i++) {
-			  var index = lipIndex[i];
-			  lipPoints[i * 5] = this.points[index][0];
-			  lipPoints[i * 5 + 1] = this.points[index][1];
-			  lipPoints[i * 5 + 2] = lipTexCoordnate[2 * (index - lipMarkBeginIndex)];
-			  lipPoints[i * 5 + 3] = lipTexCoordnate[2 * (index - lipMarkBeginIndex) + 1];
-			  lipPoints[i * 5 + 4] = translucent;
-			}
-			
-			console.log(lipMarkBeginIndex,"lipPoints的值 hah", lipPoints,lipTexCoordnate);
-			vertexbuffer = gl.createBuffer();
-			if (vertexbuffer === null) {
-			  console.log("vertexbuffer is null");
-			}
-			console.log('drawFaceLipdrawFaceLip开始gl.ARRAY_BUFFER', vertexbuffer)
-			
-			
-			const FSIZE = 4;
-			gl.enable(gl.BLEND);
-			gl.blendFuncSeparate(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA, gl.NONE, gl.ONE);
-			gl.blendEquationSeparate(gl.FUNC_ADD, gl.FUNC_ADD);
-			gl.bindBuffer(gl.ARRAY_BUFFER, vertexbuffer);
-			gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(lipPoints), gl.STREAM_DRAW);
-			
-			const aposlocation = gl.getAttribLocation(shaderProgram, 'a_position');
-			gl.enableVertexAttribArray(aposlocation);
-			gl.vertexAttribPointer(aposlocation, 2, gl.FLOAT, false, FSIZE * 5, 0);
-			console.log("aposlocation的值 ", aposlocation);
-			
-			const auv = gl.getAttribLocation(shaderProgram, 'a_uv');
-			gl.enableVertexAttribArray(auv);
-			gl.vertexAttribPointer(auv, 3, gl.FLOAT, false, FSIZE * 5, FSIZE * 2);
-			console.log("auv的值 ", auv);
-			
-			gl.useProgram(0);
-			gl.bindTexture(0);
-			lipTexture = gl.createTexture();
-			console.log("lipTexture gl.createTexture", lipTexture);
-			if (lipTexture === null) {
-			  console.log("lipTexture is null");
-			  // return false;
-			}
-			gl.bindTexture(gl.TEXTURE_2D, lipTexture);
-			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
-			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
-			gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res); // 配置纹理图像
-			console.log("createTexturecreateTexture ", lipTexture);
-			
-			gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 1); // 对纹理图像进行y轴反转
-			gl.activeTexture(gl.TEXTURE1);
-			gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
-			
-			gl.activeTexture(gl.TEXTURE0);
-			gl.bindTexture(gl.TEXTURE_2D, lipTexture);
-			
-			
-			gl.useProgram(shaderProgram);
-			
-			gl.drawArrays(gl.TRIANGLES, 0, 60);
 		},
 		initRenderPipeline() {
 			var vertCode =
@@ -858,6 +540,219 @@ export default {
 			}
 			console.log("lipPointsIndex的值 ", lipPointsIndex);
 		},
+		
+		handleARFrame1() {
+			console.log('...handleARFrame1...',this.points84By63)
+			var rawPoints = this.points84By63.map(item=>item*0.3);
+			console.log('...handleARFrame1.rawPoints..',rawPoints,this.imgWidth, this.imgHeight)
+			let len = 106;
+			for (var i = 0; i < 84; i++) {
+				rawPoints.unshift(0.1, 0.1);
+			}
+			for (var i = 104; i < len; i++) {
+				rawPoints.push(0.1, 0.1);
+			}
+			function transformPoint(point, fw, fh) {
+				return [(point[0] / fw) * 2 - 1, (1 - point[1] / fh) * 2 - 1];
+			}
+			var points = []
+
+			for (var i = 0; i < 106; i++) {
+				points.push(transformPoint([rawPoints[i * 2], rawPoints[i * 2 + 1]], this.imgWidth, this.imgHeight));
+			}
+			console.log(points,'...gl 出来了么....')
+			this.points = points;
+		},
+		quadRenderPipeline(gl) {
+			/*=========================Shaders========================*/
+			const FSIZE = 4;
+			var quadVertCode =
+			  `#version 300 es
+			      layout(location = 0) in vec2 a_position;
+			      layout(location = 1) in vec2 a_uv;
+			      out vec2 uv_out;
+			      void main() {
+			        gl_Position = vec4(a_position, 1.0, 1.0);
+			        uv_out = a_uv;
+			      }
+			      `;
+			const quadFragCode =
+			  `#version 300 es
+			      precision mediump float;
+			      in vec2 uv_out;
+			      uniform sampler2D u_texture;
+			      layout(location = 0) out vec4 outColor;
+			      void main() {
+			        vec2 uv = vec2(uv_out.x, uv_out.y);
+			        outColor = vec4(texture(u_texture, uv).xyz, 1.0);
+			      }
+			      `;
+				  console.log("quadVertShader的值", quadVertShader);
+			
+			
+			
+			// 创建顶点着色器
+			quadVertShader = gl.createShader(gl.VERTEX_SHADER); // 创建顶点着色器
+			gl.shaderSource(quadVertShader, quadVertCode); // 绑定顶点着色器源码
+			gl.compileShader(quadVertShader); // 编译定点着色器
+			
+			console.log("quadVertShader的值", quadVertShader);
+			
+			//创建片元着色器
+			quadFragShader = gl.createShader(gl.FRAGMENT_SHADER); // 创建片元着色器
+			gl.shaderSource(quadFragShader, quadFragCode); // 绑定片元着色器源码
+			gl.compileShader(quadFragShader); // 编译片元着色器
+			console.log("quadFragShader的值", quadFragShader);
+			
+			quadShaderProgram = gl.createProgram();  // 创建着色器程序
+			gl.attachShader(quadShaderProgram, quadVertShader); // 指定顶点着色器
+			gl.attachShader(quadShaderProgram, quadFragShader);  // 指定片元着色色器
+			
+			gl.linkProgram(quadShaderProgram);  // 链接程序
+			if ( !gl.getProgramParameter( quadShaderProgram, gl.LINK_STATUS) ) {
+			  var info = gl.getProgramInfoLog(quadShaderProgram);
+			  throw new Error('Could not compile WebGL program. \n\n' + info);
+			}
+			gl.useProgram(quadShaderProgram);  //使用着色器
+			console.log("quadShaderProgram 渲染成功否");
+			
+			// gl.quadShaderProgram = shaderProgram;
+		},
+		drawQuan(res){
+			 // gl.useProgram(0);
+			gl.clearColor(0.0, 0.0, 0.0, 0.0);
+			gl.clear(gl.COLOR_BUFFER_BIT);	
+			
+			const FSIZE = 4;
+			quadVertexbuffer = gl.createBuffer(); //  创建缓冲区对象(gl.createBuffer())
+			if (quadVertexbuffer === null) {
+			      console.log("quadVertexbuffer is null");
+			}
+			console.log("quadVertexbuffer", quadVertexbuffer);
+			// 绑定缓冲区对象(gl.bindBuffer(target, buffer))
+			// gl.disable(gl.BLEND);
+			gl.bindBuffer(gl.ARRAY_BUFFER, quadVertexbuffer);
+			// 将数据写入缓冲区对象(gl.bufferData()) WebGL 不支持直接使用 JavaScript 原始数组类型，需要转换
+			gl.bufferData(gl.ARRAY_BUFFER, quadVertex, gl.STATIC_DRAW);
+			
+			const qposlocation = gl.getAttribLocation(quadShaderProgram, 'a_position');
+			console.log("qposlocation", qposlocation);
+			if (qposlocation < 0) {
+			  console.log("a_Position < 0");
+			}
+			gl.vertexAttribPointer(qposlocation, 2, gl.FLOAT, false, FSIZE * 4, 0);  //将顶点坐标的位置赋值
+			gl.enableVertexAttribArray(qposlocation);    // 赋能-批处理
+		
+			
+			const quv = gl.getAttribLocation(quadShaderProgram, 'a_uv');
+			if (quv < 0) {
+			  console.log("quv < 0");
+			}
+			gl.vertexAttribPointer(quv, 2, gl.FLOAT, false, FSIZE * 4, FSIZE * 2);
+			gl.enableVertexAttribArray(quv);
+			console.log("quv 222", quv);
+			
+			cameraTexture = gl.createTexture(); //创建纹理对象
+			console.log("cameraTexture gl.createTexture", cameraTexture);
+			if (cameraTexture === null) {
+			  console.log("cameraTexture is null");
+			  // return false;
+			}
+			// gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 1); // 对纹理图像进行y轴反转
+			gl.activeTexture(gl.TEXTURE0);// 开启0号纹理单元
+			gl.bindTexture(gl.TEXTURE_2D, cameraTexture); // 向target绑定纹理对象
+			
+			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+			gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+			console.log("cameraTexture ", cameraTexture);
+			
+			
+			// gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
+			gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, res);
+			
+			// gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
+				  
+			gl.useProgram(quadShaderProgram);
+			gl.drawArrays(gl.TRIANGLES, 0, 6);
+		},
+		lipRenderPipeline() {
+			const FSIZE = 4;
+			var vertCode =
+			  `#version 300 es
+			      layout(location = 0) in vec2 a_position;
+			      layout(location = 1) in vec3 a_uv;
+			      out vec3 uv_out;
+			      void main() {
+			        gl_Position = vec4(a_position, 1.0, 1.0);
+			        uv_out = a_uv;
+			        //uv_out = vec2(1.0, 0.0);
+			      }
+			      `;
+			const fragCode =
+			  `#version 300 es
+			      precision mediump float;
+			      in vec3 uv_out;
+			      uniform sampler2D u_texture;
+			      uniform sampler2D u_texture2;
+			      layout(location = 0) out vec4 outColor;
+			      void main() {
+			
+			        vec2 uv = vec2(uv_out.x, 1.0 - uv_out.y);
+					// vec2 uv = vec2(uv_out.x, uv_out.y);
+			        vec3 lipColor = texture(u_texture, uv).xyz;
+			        vec3 c = lipColor;
+			        vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
+			        vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));
+			        vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));
+			
+			        float d = q.x - min(q.w, q.y);
+			        float e = 1.0e-10;
+			        vec3 hc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
+			
+			        hc.y *= 1.2;
+			
+			        vec4 L = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+			        vec3 M = abs(fract(hc.xxx + L.xyz) * 6.0 - L.www);
+			        vec3 color = hc.z * mix(L.xxx, clamp(M - L.xxx, 0.0, 1.0), hc.y);
+			
+			        //outColor = vec4(color, 1.0);
+			        
+			        
+			        //vec4 lipColor = texture(u_texture, uv);
+			        vec4 frameColor = texture(u_texture2, uv_out.xy);
+			        //vec3 finalColor = lipColor.xyz * lipColor.w + frameColor.xyz * (1.0 - lipColor.w);
+			        float alpha = texture(u_texture, uv).w;
+			        outColor = vec4(color.xyz, alpha * uv_out.z);
+			      }
+			      `;
+			
+			
+				  
+			vertShader = gl.createShader(gl.VERTEX_SHADER);
+			
+			if (vertShader === null) {
+			  console.log("vertShader is null");
+			}
+			gl.shaderSource(vertShader, vertCode);
+			gl.compileShader(vertShader);
+			
+			console.log("vertShader is compileShader ");
+			
+			fragShader = gl.createShader(gl.FRAGMENT_SHADER);
+			gl.shaderSource(fragShader, fragCode);
+			gl.compileShader(fragShader);
+			
+			
+			console.log("fragShader is compileShader ");
+			shaderProgram = gl.createProgram();
+			gl.attachShader(shaderProgram, vertShader);
+			gl.attachShader(shaderProgram, fragShader);
+			gl.linkProgram(shaderProgram);
+			gl.useProgram(shaderProgram);
+			console.log('。。。。初始化着色器是否成功。。。。');
+		},
 		releaseRenderFacePoints() {
 			// gl.deleteShader(this.facePoints.vertShader);
 			// gl.deleteShader(this.facePoints.fragShader);
@@ -957,7 +852,13 @@ export default {
 			return new Promise((resolve,reject)=>{
 				console.log(this.canvas, '......图片.this.canvas.', lipTexturePath);
 				let imgPath = lipTexturePath;
-				let img1 = canvas.createImage();
+				let img1;
+				// #ifdef MP
+				 img1 = canvas.createImage();
+				 // #endif
+				// #ifdef H5
+				 img1 =  new Image();
+				 // #endif 
 				img1.onload =  (res) => {
 					// this.initRenderPipeline();
 					// gl.bindTexture(gl.TEXTURE_2D, lipTexture);
@@ -973,20 +874,7 @@ export default {
 				};
 				img1.src = imgPath;
 			})
-			
-			
-			
-			// let poster = this.canvas.createImage();
-			// wx.getImageInfo({
-			//    src: lipTexturePath, //图片的网络地址
-			//    success: (res) => {
-			//      poster.src = res.path //图片缓存地址
-			//      poster.onload = (e) => {
-			//        // ctx.drawImage(poster, 0, 0, 200, 200)
-			// 		console.log(lipTexture, '......图片..', e, poster);
-			//      }
-			//    }
-			// })
+
 		},
 
 		updateFaceData(data, width, height) {
@@ -1036,36 +924,7 @@ export default {
 		  //返回着色器对象
 		  return shader;
 		},
-		updateFaceData1() {
-			return new Promise((resolve,reject)=>{
-				uni.getImageInfo({
-					src: this.imgModel,
-					success: res => {
-						console.log('getImageInfo  updateFaceData1', res);
-						uni.getFileSystemManager().readFile({
-							filePath: res.path, // 选择图片返回的相对路径
-							// encoding: 'base64', // 编码格式
-							success: res1 => {
-								// 成功的回调
-								console.log(res.width,'--将图片图片转为base64方法toBase64  success--', res1.data);
-								var dataFrame = new Uint8Array(res1.data);
-								// gl.bindTexture(gl.TEXTURE_2D, cameraTexture);
-								// gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, res.width, res.height, 0, gl.RGBA, gl.UNSIGNED_BYTE, dataFrame);
-								resolve({data:dataFrame,width:res.width,height:res.height})
-							},
-							fail: err => {
-								console.log('--将图片图片转为base64方法toBase64 fail--', err);
-								reject(err);
-							}
-						});
-					},
-					fail: (err) => {
-						console.log('--getImageInfo  updateFaceData1 fail--', err);
-					}
-				});
-			})
-			
-		},
+		
 		drawFacePoints(points) {
 			
 		
@@ -1195,17 +1054,17 @@ export default {
 			gl.uniform4f(u_FragColor, 1.0, 0.0, 0.0, 1.0);
 			
 			
-			// gl.clearColor(0.0,0.0,0.0,0.0);
-			// gl.clear(gl.COLOR_BUFFER_BIT);
+			gl.clearColor(0.0,0.0,0.0,0.0);
+			gl.clear(gl.COLOR_BUFFER_BIT);
 			// Draw the triangle
 			gl.drawArrays(gl.POINTS, 0, pointCount);
 		},
 		 renderImg() {
 		    let imgpath = this.imgModel;
 		    console.log(imgpath, 'imgpath');
-		    let canvas = this.canvas;
-		    let gl = this.gl;
-		    let img = canvas.createImage();
+		    // let canvas = this.canvas;
+		    // let gl = this.gl;
+		    let img = new Image();
 		    img.onload = (r) => {
 		      console.log('图片加载成功', r)
 		
@@ -1361,10 +1220,14 @@ export default {
 	width: 100%;
 	height: 100%;
 }
-#arcanvas {
+#arcanvas,#canvasId {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	z-index: 11;
+}
+#canvasId{
+	z-index: 12;
+	top:0
 }
 </style>

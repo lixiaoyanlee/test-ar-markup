@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index-h5"
   ],
   "subPackages": [],
   "window": {
-    "defaultTitle": "uni-app",
-    "titleBarColor": "#F8F8F8",
+    "defaultTitle": "AR试妆",
+    "titleBarColor": "#007AFF",
     "backgroundColor": "#F8F8F8",
     "transparentTitle": "always"
   },
