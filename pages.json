@@ -12,6 +12,13 @@
 				"enablePullDownRefresh": false,
 				"app-plus":{"bounce":"none"}
 			}
+		},
+		{
+			"path": "pages/webview/index",
+			"style": {
+				"navigationBarTitleText": "h5页面",
+				"navigationStyle": "custom"
+			}
 		}
 	],
 	"globalStyle": {
